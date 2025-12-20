@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ia-wedding-invitation/static/css/main.a4ba25e7.css",
-    "main.js": "/ia-wedding-invitation/static/js/main.47928729.js",
+    "main.css": "/ia-wedding-invitation/static/css/main.ae754fd0.css",
+    "main.js": "/ia-wedding-invitation/static/js/main.97110f0c.js",
     "static/js/453.0d3574e8.chunk.js": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js",
+    "static/media/letter-cover.png": "/ia-wedding-invitation/static/media/letter-cover.99df15fd5e104280ec6f.png",
     "index.html": "/ia-wedding-invitation/index.html",
-    "main.a4ba25e7.css.map": "/ia-wedding-invitation/static/css/main.a4ba25e7.css.map",
-    "main.47928729.js.map": "/ia-wedding-invitation/static/js/main.47928729.js.map",
+    "main.ae754fd0.css.map": "/ia-wedding-invitation/static/css/main.ae754fd0.css.map",
+    "main.97110f0c.js.map": "/ia-wedding-invitation/static/js/main.97110f0c.js.map",
     "453.0d3574e8.chunk.js.map": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4ba25e7.css",
-    "static/js/main.47928729.js"
+    "static/css/main.ae754fd0.css",
+    "static/js/main.97110f0c.js"
   ]
 }
