@@ -1,7 +1,9 @@
 export default function Invite() {
   return (
     <div id="invite" className="page active">
-      <h1>Invito di matrimonio</h1>
+      <h1><i>Irene & Anton</i></h1>
+      <p>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</p>
+      
       <p><strong>11 Luglio 2026 – ore 16:00</strong></p>
 
       <a
