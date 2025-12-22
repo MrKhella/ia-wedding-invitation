@@ -1,12 +1,14 @@
 import { Box, Typography, ButtonBase } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function Cover({ openInvite }) {
+export default function Cover() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleOpen = () => {
     setIsOpen(true);
-    setTimeout(() => openInvite(), 800); // dopo l’animazione apri l’invito
+    setTimeout(() => navigate("/invite"), 800); // dopo l’animazione apri l’invito
   };
 
   return (
@@ -52,11 +54,11 @@ export default function Cover({ openInvite }) {
       <Box
         sx={{
           position: "absolute",
-          top: "39%",
+          top: { xs: "42%", md: "45%" },
           left: "65%",
           transform: "translateX(-50%)",
-          width: 300,
-          height: 150,
+          width: { xs: 270, md: 180 },
+          height: { xs: 140, md: 90 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -83,10 +85,10 @@ export default function Cover({ openInvite }) {
                 position: "absolute",
                 left: "50%",
                 bottom: 0,
-                transform: `
-                  rotate(${i * 9 - 70}deg)
-                  translateY(-75px)
-                `,
+                transform: {
+                  xs: `rotate(${i * 6 - 65}deg) translateY(-90px)`,
+                  md: `rotate(${i * 6 - 65}deg) translateY(-100px)`
+                }
               }}
             >
               {char}
