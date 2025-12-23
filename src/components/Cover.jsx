@@ -1,10 +1,12 @@
 import { Box, Typography, ButtonBase } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "@mui/material/styles";
 
 export default function Cover() {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const theme = useTheme();
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -57,8 +59,8 @@ export default function Cover() {
           top: { xs: "42%", md: "45%" },
           left: "65%",
           transform: "translateX(-50%)",
-          width: { xs: 270, md: 180 },
-          height: { xs: 140, md: 90 },
+          width: { xs: 290, md: 180 },
+          height: { xs: 180, md: 90 },
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -69,7 +71,7 @@ export default function Cover() {
           component="span"
           sx={{
             position: "absolute",
-            fontFamily: "Georgia, serif",
+            fontFamily: theme.typography.fonts.dancingScript,
             fontWeight: "bold",
             color: "#a8c176",
             letterSpacing: "0",
@@ -120,7 +122,7 @@ export default function Cover() {
       >
         <Typography
           sx={{
-            fontFamily: "Georgia, serif",
+            fontFamily: theme.typography.fonts.dancingScript,
             fontWeight: "bold",
             fontSize: { xs: "28px", md: "36px" },
             color: "#fffbe6",
