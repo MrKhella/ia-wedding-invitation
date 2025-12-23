@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/ia-wedding-invitation/static/css/main.ae754fd0.css",
-    "main.js": "/ia-wedding-invitation/static/js/main.610fc63a.js",
+    "main.css": "/ia-wedding-invitation/static/css/main.4d134685.css",
+    "main.js": "/ia-wedding-invitation/static/js/main.c79bd417.js",
     "static/js/453.0d3574e8.chunk.js": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js",
-    "static/media/letter-cover.png": "/ia-wedding-invitation/static/media/letter-cover.99df15fd5e104280ec6f.png",
+    "static/media/slick.svg": "/ia-wedding-invitation/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ia-wedding-invitation/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ia-wedding-invitation/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ia-wedding-invitation/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ia-wedding-invitation/index.html",
-    "main.ae754fd0.css.map": "/ia-wedding-invitation/static/css/main.ae754fd0.css.map",
-    "main.610fc63a.js.map": "/ia-wedding-invitation/static/js/main.610fc63a.js.map",
+    "main.4d134685.css.map": "/ia-wedding-invitation/static/css/main.4d134685.css.map",
+    "main.c79bd417.js.map": "/ia-wedding-invitation/static/js/main.c79bd417.js.map",
     "453.0d3574e8.chunk.js.map": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae754fd0.css",
-    "static/js/main.610fc63a.js"
+    "static/css/main.4d134685.css",
+    "static/js/main.c79bd417.js"
   ]
 }
