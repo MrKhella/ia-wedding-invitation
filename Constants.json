@@ -1,0 +1,22 @@
+{
+  "weddingDate": "2026-07-11T16:00:00",
+  "location": {
+    "name": "Casale Consolini",
+    "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z",
+    "emoji": "📍"
+  },
+  "church": {
+    "name": "Basilica di Santo Stefano Rotondo",
+    "url": "https://www.google.com/maps/place/Basilica+di+Santo+Stefano+Rotondo+al+Celio/",
+    "emoji": "⛪"
+  },
+  "rsvpForm": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdysbmjUpaO7lKltaZhDvMIwL9TgUX9sTmpc5dsQ-cZy3uMTw/viewform",
+    "emoji": "✅"
+  },
+  "whatsapp": {
+    "phone": "+393420240133",
+    "yesMessage": "Sì, parteciperò!",
+    "noMessage": "Mi dispiace, non potrò partecipare."
+  }
+}
