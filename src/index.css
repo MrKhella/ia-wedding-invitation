@@ -105,7 +105,7 @@ body {
   background: var(--accent-dark);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .container {
     max-width: 700px;
   }
@@ -122,4 +122,27 @@ body {
   .btn {
     font-size: 20px;
   }
+  .slick-slide { padding-right: 20px; }
+}
+
+
+  /* .slick-slide { padding-right: 20px; } */
+  .slick-slider,
+  .slick-list,
+  .slick-track {
+    height: 250px !important;
+  }
+.slick-prev,
+.slick-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+}
+.slick-prev:hover,
+.slick-next:hover {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
 }

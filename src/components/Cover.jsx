@@ -1,4 +1,4 @@
-import { Box, Typography, ButtonBase } from "@mui/material";
+import { Box, Typography, ButtonBase , Container } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
@@ -14,6 +14,7 @@ export default function Cover() {
   };
 
   return (
+    <Container maxWidth="md" sx={{ padding: 2 }}>
     <Box
       sx={{
         position: "fixed",
@@ -133,5 +134,6 @@ export default function Cover() {
         </Typography>
       </ButtonBase>
     </Box>
+    </Container>
   );
 }

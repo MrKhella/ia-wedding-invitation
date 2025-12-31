@@ -1,0 +1,29 @@
+{
+  "weddingDate": "Sabato 11 Luglio 2026",
+  "introText":"Con immenso piacere siamo lieti di invitarvi al nostro matrimonio",
+  "location": {
+    "name": "Ricevimento",
+    "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z/data=!3m1!4b1!4m6!3m5!1s0x132589cb27893689:0xef308f8f2cfb9431!8m2!3d41.8421304!4d12.5728286!16s%2Fg%2F1vt_sdcc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
+    "emoji": "📍",
+    "faIcon": "location-dot",
+    "img": "/ia-wedding-invitation/img/ricevimento.jpeg",
+    "time": "Dalle ore 19:00"
+  },
+  "chiesa": {
+    "name": "Cerimonia",
+    "url": "https://www.google.com/maps/place/Basilica+di+Santo+Stefano+Rotondo+al+Celio/@41.8845602,12.4941776,16z/data=!3m1!4b1!4m6!3m5!1s0x132f61c7cae3e9fb:0xbd7d43e12d2fbcc2!8m2!3d41.8845602!4d12.4967525!16zL20vMGJfcm55?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
+    "emoji": "⛪",
+    "faIcon": "church",
+    "img": "/ia-wedding-invitation/img/chiesa.jpg",
+    "time": "Dalle ore 16:00"
+  },
+  "rsvpForm": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSdysbmjUpaO7lKltaZhDvMIwL9TgUX9sTmpc5dsQ-cZy3uMTw/viewform",
+    "emoji": "✅"
+  },
+  "whatsapp": {
+    "phone": "+393420240133",
+    "yesMessage": "Sì, parteciperò!",
+    "noMessage": "Mi dispiace, non potrò partecipare."
+  }
+}

@@ -6,7 +6,7 @@ export default function Footer() {
       sx={{
         textAlign: "center",
         marginTop: "40px",
-        paddingBottom: "30px",
+        padding: "0 30px",
         opacity: 0.8,
       }}
     >
