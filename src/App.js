@@ -18,9 +18,9 @@ export default function App() {
           <Route path="/" element={
             <Cover />
             } />
-          <Route path="/ia-wedding-invitation" element={
+          {/* <Route path="/ia-wedding-invitation" element={
             <Cover />
-            } />
+            } /> */}
           <Route path="/invite" element={
             <Invite />
         } />
