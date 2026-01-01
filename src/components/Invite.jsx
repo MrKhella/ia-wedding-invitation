@@ -4,10 +4,12 @@ import CarouselLinks from "./CarouselLinks";
 import Rispondi from "./Rispondi";
 import useConfig from "../hooks/useConfig";
 import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export default function Invite() {
 
   const { config, loading, error } = useConfig();
+  const theme = useTheme();
 
   if (loading) return null; // oppure un loader 
   if (error) return <p>Errore: {error}</p>;
@@ -29,12 +31,13 @@ export default function Invite() {
         <Typography
           sx={{
             fontSize: "22px",
-            fontFamily: "Georgia, serif",
+            fontFamily: theme.typography.fonts.dancingScript,
             marginBottom: "10px",
           }}
         >
           <strong>{config.weddingDate}</strong>
         </Typography>
+        {/* <img src="/ia-wedding-invitation/saveDate.png" alt=""  width={400} height={100}/> */}
       </Box>
       <CarouselLinks />
       <Rispondi config={config} />

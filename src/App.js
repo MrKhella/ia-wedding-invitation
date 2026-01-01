@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Cover from "./components/Cover";
 import Invite from "./components/Invite";
 import Regalo from "./components/Regalo";
@@ -10,7 +10,7 @@ import theme from "./Theme";
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
       <Container 
           maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px 0" }}
         >
@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/regalo" element={<Regalo />} />
         </Routes>
       </Container>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }

@@ -57,7 +57,7 @@ export default function Cover() {
       <Box
         sx={{
           position: "absolute",
-          top: { xs: "42%", md: "45%" },
+          top: { xs: "38%", md: "45%" },
           left: "65%",
           transform: "translateX(-50%)",
           width: { xs: 290, md: 180 },
