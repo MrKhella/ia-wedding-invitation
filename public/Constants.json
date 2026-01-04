@@ -28,11 +28,18 @@
       "question":"Parteciperai?",
       "yesMessage": "Sì, parteciperò!",
       "noMessage": "Mi dispiace, non potrò partecipare.",
-      "deathLineText":""
+      "deathLineText": ""
+    },
+    "regalo": {
+      "headerTxt": "",
+      "footerTxt": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
+      "iban": "ITxxxxxxxx",
+      "intestatario": "Anton Khella & Irene De Meo",
+      "Banca": ""
     }
   },
   "en": {
-    "sigillo":"Click here to open",
+    "sigillo":"Tap here to open",
     "weddingDate": "Saturday, July 11th 2026",
     "introText": "We are delighted to invite you to our wedding",
     "location": {
@@ -61,6 +68,13 @@
       "yesMessage": "Yes, I will attend!",
       "noMessage": "Sorry, I won’t be able to attend.",
       "deathLineText":""
+    },
+    "regalo": {
+      "headerTxt": "",
+      "footerTxt": "[en]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
+      "iban": "ITxxxxxxxx",
+      "intestatario": "Anton Khella & Irene De Meo",
+      "Banca": ""
     }
   },
   "ar": {
@@ -94,6 +108,13 @@
       "yesMessage": "طبعاً، هكون موجود",
       "noMessage": "آسف، مش هقدر أحضر.",
       "deathLineText":""
+    },
+    "regalo": {
+      "headerTxt": "",
+      "footerTxt": "[ar]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
+      "iban": "ITxxxxxxxx",
+      "intestatario": "Anton Khella & Irene De Meo",
+      "Banca": ""
     }
   }
 }

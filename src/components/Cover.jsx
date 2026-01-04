@@ -100,7 +100,7 @@ const { config, loading, error } = useConfig();
       <Box
   sx={{
     position: "absolute",
-    top: { xs: "38%", md: "45%" },
+    top: { xs: "55%", md: "45%" },
     left: "65%",
     transform: "translateX(-50%)",
     width: { xs: 290, md: 180 },
@@ -123,7 +123,7 @@ const { config, loading, error } = useConfig();
     <defs>
       <path
         id="sigillo-curve"
-        d="M 20 30 Q 150 -150 280 30"
+        d="M 20 20 Q 150 -260 280 15"
         fill="transparent"
       />
     </defs>
