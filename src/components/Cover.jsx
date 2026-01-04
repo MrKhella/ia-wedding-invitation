@@ -123,7 +123,7 @@ const { config, loading, error } = useConfig();
     <defs>
       <path
         id="sigillo-curve"
-        d="M 20 20 Q 150 -260 280 15"
+        d="M 20 10 Q 150 -300 280 10"
         fill="transparent"
       />
     </defs>
