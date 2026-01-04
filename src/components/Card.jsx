@@ -27,7 +27,7 @@ export default function Card({ item , isDesktop}) {
         sx={{
           position: "absolute",
           inset: 0,
-          background: "rgba(0,0,0,0.35)",
+          background: "rgba(0,0,0,0.5)",
         }}
       />
 
@@ -67,7 +67,7 @@ export default function Card({ item , isDesktop}) {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "end",
+            justifyContent: "start",
             color: "white",
           }}
         >
@@ -76,7 +76,7 @@ export default function Card({ item , isDesktop}) {
               fontSize: "12px",
               fontFamily: "Playfair Display, serif",
               fontStyle: "italic",
-              backgroundColor: "rgba(89, 112, 59, 0.5)",
+              backgroundColor: "rgba(136, 156, 130,0.4)",
               width: "100%",
             }}
           >

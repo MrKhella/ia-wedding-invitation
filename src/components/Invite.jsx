@@ -32,7 +32,7 @@ export default function Invite() {
         </Typography>
         <Typography
           sx={{
-            fontSize: "22px",
+            fontSize: "36px",
             fontFamily: theme.typography.fonts.dancingScript,
             marginBottom: "10px",
           }}
@@ -43,6 +43,24 @@ export default function Invite() {
       </Box>
       <CarouselLinks config={config} />
       <Rispondi config={config} />
+
+      <Box
+            sx={{
+              textAlign: "center",
+              margin: "30px",
+              opacity: 0.8,
+            }}
+          >
+      <Typography
+        sx={{
+          fontFamily: "Parisienne, cursive",
+          fontSize: "22px",
+          textShadow:"0 4px 20px rgba(136, 156, 130)" 
+        }}
+      >
+        “ {config.footerText} ”
+      </Typography>
+      </Box>
       <Footer />
     </div>
   );

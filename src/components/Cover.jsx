@@ -1,4 +1,4 @@
-import { Box, Typography, ButtonBase , Container } from "@mui/material";
+import { Box, Typography, ButtonBase , Container , useMediaQuery} from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
@@ -6,7 +6,9 @@ import { useLanguage } from "../context/LanguageContext";
 import useConfig from "../hooks/useConfig";
 
 export default function Cover() {
-const { config, loading, error } = useConfig();
+  const { config, loading, error } = useConfig();
+
+  const isDesktop = useMediaQuery("(min-width:768px)");
 
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
@@ -96,56 +98,59 @@ const { config, loading, error } = useConfig();
         />
       </Box>
 
-      {/* Testo curvo sopra il sigillo */}
-      <Box
-  sx={{
-    position: "absolute",
-    top: { xs: "55%", md: "45%" },
-    left: "65%",
-    transform: "translateX(-50%)",
-    width: { xs: 290, md: 180 },
-    height: { xs: 180, md: 90 },
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    pointerEvents: "none",
-  }}
->
-  <svg
-    width="100%"
-    height="100%"
-    viewBox="0 0 300 150"
-    style={{
-      position: "absolute",
-      overflow: "visible",
-    }}
-  >
-    <defs>
-      <path
-        id="sigillo-curve"
-        d="M 20 10 Q 150 -300 280 10"
-        fill="transparent"
-      />
-    </defs>
+          {!isDesktop &&
+            <>
+              {/* Testo curvo sopra il sigillo solo per mobile*/}
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: { xs: "55%", md: "45%" },
+                  left: "65%",
+                  transform: "translateX(-50%)",
+                  width: { xs: 290, md: 180 },
+                  height: { xs: 180, md: 90 },
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  pointerEvents: "none",
+                }}
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 300 150"
+                  style={{
+                    position: "absolute",
+                    overflow: "visible",
+                  }}
+                >
+                  <defs>
+                    <path
+                      id="sigillo-curve"
+                      d="M 20 10 Q 150 -300 280 5"
+                      fill="transparent"
+                    />
+                  </defs>
 
-    <text
-      fill="#a8c176"
-      fontFamily={theme.typography.fonts.dancingScript}
-      fontSize="18"
-      fontWeight="bold"
-      direction={config.direction || "ltr"}
-    >
-      <textPath
-        href="#sigillo-curve"
-        startOffset="50%"
-        textAnchor="middle"
-      >
-        {config.sigillo}
-      </textPath>
-    </text>
-  </svg>
-</Box>
-
+                  <text
+                    fill="#a8c176"
+                    fontFamily={theme.typography.fonts.dancingScript}
+                    fontSize="18"
+                    fontWeight="bold"
+                    direction={config.direction || "ltr"}
+                  >
+                    <textPath
+                      href="#sigillo-curve"
+                      startOffset="50%"
+                      textAnchor="middle"
+                    >
+                      {config.sigillo}
+                    </textPath>
+                  </text>
+                </svg>
+              </Box>
+            </>
+          }
 
       {/* Sigillo con animazione */}
       <ButtonBase

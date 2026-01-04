@@ -5,7 +5,7 @@ export default function Rispondi({ config }) {
 
   if (!config) return null;
   return (
-    <Box sx={{ textAlign: "center", marginTop: "30px" , padding:"0 30px"}}>
+    <Box sx={{ textAlign: "center", marginTop: "0" }}>
       <Typography
         sx={{
           fontSize: "22px",
@@ -20,17 +20,17 @@ export default function Rispondi({ config }) {
         <a
           href={`https://wa.me/${phone}?text=${encodeURIComponent(yesMessage)}`}
           className="btn"
-          style={{ width: "100px", background: "#a8c176" }}
+          style={{ width: "100px", background: "rgba(136, 156, 130)" , boxShadow:"0 4px 20px rgba(0,0,0,0.25)" }}
         >
-          SI
+          {config.whatsapp.yesButton}
         </a>
 
         <a
           href={`https://wa.me/${phone}?text=${encodeURIComponent(noMessage)}`}
           className="btn"
-          style={{ width: "100px", background: "#999" }}
+          style={{ width: "100px", background: "#999" , boxShadow:"0 4px 20px rgba(0,0,0,0.25)"  }}
         >
-          NO
+          {config.whatsapp.noButton}
         </a>
       </Box>
     </Box>

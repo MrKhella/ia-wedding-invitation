@@ -14,7 +14,7 @@ export default function App() {
       <LanguageProvider>
       <HashRouter>
       <Container 
-          maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px 0" }}
+          maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px 0 0 20px" }}
         >
         <Routes>
           <Route path="/" element={

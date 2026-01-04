@@ -1,10 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { useLanguage } from "../context/LanguageContext";
 
 export default function Header() {
     const theme = useTheme();
-    const { lang, setLang } = useLanguage();
   return (
     <Box
       sx={{
@@ -12,13 +10,6 @@ export default function Header() {
         paddingBottom: "10px",
       }}
     >
-      {/* <div>
-      <select value={lang} onChange={e => setLang(e.target.value)}>
-        <option value="it">🇮🇹 Italiano</option>
-        <option value="en">🇬🇧 English</option>
-        <option value="ar">🇪🇬 العربية</option>
-      </select>
-    </div> */}
         {/* Contenitore delle due immagini */}
           <Box sx={{
               display: "flex",
@@ -41,6 +32,7 @@ export default function Header() {
           textAlign: "center",
           fontStyle: "italic",
           marginTop: "10px",
+          textShadow:"0 4px 20px rgba(136, 156, 130)" 
         }}
       >
         Irene & Anton

@@ -10,6 +10,14 @@ export default function CarouselLinks({ config }) {
   const navigate = useNavigate();
 
   const items = [
+    
+    {
+      title: "Regalo",
+      emoji: "✅",
+      url: "/regalo",
+      isExternal: false,
+      img: "/ia-wedding-invitation/img/regalo.jpg",
+    },
     {
       title: `${config.chiesa.name}`,
       emoji: `${config.chiesa.emoji}`,
@@ -28,13 +36,6 @@ export default function CarouselLinks({ config }) {
       img: `${config.location.img}`,
       time: `${config.location.time}`,
     },
-    {
-      title: "Regalo",
-      emoji: "✅",
-      url: "/regalo",
-      isExternal: false,
-      img: "/ia-wedding-invitation/img/regalo.jpg",
-    }
   ];
 
   const settings = {
@@ -46,11 +47,11 @@ export default function CarouselLinks({ config }) {
     swipeToSlide: true,
     arrows: isDesktop,
     centerMode: true,
-    centerPadding: isDesktop ? "55px" : "-5px",
+    centerPadding: isDesktop ? "55px" : "20px",
   };
   if (!config) return null;
   return (
-    <Box sx={{ width: "100%", maxWidth: "360px", margin: "0 auto 0 40px" }}>
+    <Box sx={{ width: "100%", maxWidth: "100%", margin: "30px 0 0 0" }}>
       <Slider {...settings}>
         {items.map((item, i) => 
         (item.isExternal ?

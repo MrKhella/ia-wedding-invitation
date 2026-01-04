@@ -10,15 +10,6 @@ export default function Footer() {
         opacity: 0.8,
       }}
     >
-      <Typography
-        sx={{
-          fontFamily: "Parisienne, cursive",
-          fontSize: "22px",
-        }}
-      >
-        “La vostra presenza renderà indimenticabile questo giorno.”
-      </Typography>
-
           {/* Contenitore dell'immagine */}
           <Box
               sx={{
