@@ -54,7 +54,7 @@ export default function Invite() {
       <Typography
         sx={{
           fontFamily: "Parisienne, cursive",
-          fontSize: "22px",
+          fontSize: "32px",
           textShadow:"0 4px 20px rgba(136, 156, 130)" 
         }}
       >
