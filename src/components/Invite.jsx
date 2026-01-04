@@ -8,14 +8,16 @@ import { useTheme } from "@mui/material/styles";
 
 export default function Invite() {
 
-  const { config, loading, error } = useConfig();
+  
   const theme = useTheme();
 
+  const { config, loading, error } = useConfig();
   if (loading) return null; // oppure un loader 
   if (error) return <p>Errore: {error}</p>;
+  if (!config) return null;
 
   return (
-    <div id="invite" className="page active">
+    <div id="invite" className="page active" style={{ direction: config.direction || "ltr" }}>
       <Header />
       <Box sx={{ textAlign: "center", margin: "10px"}}>
         <Typography
@@ -39,7 +41,7 @@ export default function Invite() {
         </Typography>
         {/* <img src="/ia-wedding-invitation/saveDate.png" alt=""  width={400} height={100}/> */}
       </Box>
-      <CarouselLinks />
+      <CarouselLinks config={config} />
       <Rispondi config={config} />
       <Footer />
     </div>

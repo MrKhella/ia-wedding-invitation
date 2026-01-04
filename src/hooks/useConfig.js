@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function useConfig() {
+  const { lang } = useLanguage();
+  const [allConfig, setAllConfig] = useState(null);
   const [config, setConfig] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // 1️⃣ Carica il JSON una sola volta
   useEffect(() => {
     const loadConfig = async () => {
       try {
@@ -12,7 +16,7 @@ export default function useConfig() {
         if (!response.ok) throw new Error("File di configurazione non trovato");
 
         const data = await response.json();
-        setConfig(data);
+        setAllConfig(data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -22,6 +26,13 @@ export default function useConfig() {
 
     loadConfig();
   }, []);
+
+  // 2️⃣ Ogni volta che cambia lingua, estrai la parte giusta
+  useEffect(() => {
+    if (allConfig) {
+      setConfig(allConfig[lang]);
+    }
+  }, [lang, allConfig]);
 
   return { config, loading, error };
 }

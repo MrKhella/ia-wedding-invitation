@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 
 export default function Rispondi({ config }) {
-  const { phone, yesMessage, noMessage } = config.whatsapp;
+  const { phone, question , yesMessage, noMessage , deathLineText } = config.whatsapp;
 
-
+  if (!config) return null;
   return (
     <Box sx={{ textAlign: "center", marginTop: "30px" , padding:"0 30px"}}>
       <Typography
@@ -13,7 +13,7 @@ export default function Rispondi({ config }) {
           marginBottom: "10px",
         }}
       >
-        Parteciperai?
+        {question}
       </Typography>
 
       <Box sx={{ display: "flex", justifyContent: "center", gap: "20px" }}>

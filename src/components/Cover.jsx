@@ -2,18 +2,61 @@ import { Box, Typography, ButtonBase , Container } from "@mui/material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
+import { useLanguage } from "../context/LanguageContext";
+import useConfig from "../hooks/useConfig";
 
 export default function Cover() {
+const { config, loading, error } = useConfig();
+
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const theme = useTheme();
+
+  const { lang, setLang } = useLanguage();
 
   const handleOpen = () => {
     setIsOpen(true);
     setTimeout(() => navigate("/invite"), 800); // dopo l’animazione apri l’invito
   };
 
+  if (loading) return null; // oppure un loader 
+  if (error) return <p>Errore: {error}</p>;
+  if (!config) return null;
+
+  const direction = config.direction || "ltr";
+  const sigilloText = config.sigillo || "";
+
+  // gestione corretta di caratteri Unicode (arabo incluso)
+  const sigilloChars = Array.from(sigilloText);
+
+  // se RTL, invertiamo l’ordine delle lettere
+  const orderedChars =
+    direction === "rtl" ? [...sigilloChars].reverse() : sigilloChars;
+
+  // parametri per la curva
+  const step = 6;
+  const baseOffset = -65;
+  // se vuoi invertire il verso della curva in RTL:
+  // const angleMultiplier = direction === "rtl" ? -step : step;
+
   return (
+    <>
+    <div 
+    style={{
+      direction: config.direction || "ltr",
+      position: "absolute",
+      top: 20,
+      right: 20,
+      zIndex: 9999
+    }}
+  >
+      <select value={lang} onChange={e => setLang(e.target.value)}>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="ar">🇪🇬 العربية</option>
+      </select>
+    </div>
+    
     <Container maxWidth="md" sx={{ padding: 2 }}>
     <Box
       sx={{
@@ -55,50 +98,54 @@ export default function Cover() {
 
       {/* Testo curvo sopra il sigillo */}
       <Box
-        sx={{
-          position: "absolute",
-          top: { xs: "38%", md: "45%" },
-          left: "65%",
-          transform: "translateX(-50%)",
-          width: { xs: 290, md: 180 },
-          height: { xs: 180, md: 90 },
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          pointerEvents: "none",
-        }}
+  sx={{
+    position: "absolute",
+    top: { xs: "38%", md: "45%" },
+    left: "65%",
+    transform: "translateX(-50%)",
+    width: { xs: 290, md: 180 },
+    height: { xs: 180, md: 90 },
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    pointerEvents: "none",
+  }}
+>
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 300 150"
+    style={{
+      position: "absolute",
+      overflow: "visible",
+    }}
+  >
+    <defs>
+      <path
+        id="sigillo-curve"
+        d="M 20 30 Q 150 -150 280 30"
+        fill="transparent"
+      />
+    </defs>
+
+    <text
+      fill="#a8c176"
+      fontFamily={theme.typography.fonts.dancingScript}
+      fontSize="18"
+      fontWeight="bold"
+      direction={config.direction || "ltr"}
+    >
+      <textPath
+        href="#sigillo-curve"
+        startOffset="50%"
+        textAnchor="middle"
       >
-        <Box
-          component="span"
-          sx={{
-            position: "absolute",
-            fontFamily: theme.typography.fonts.dancingScript,
-            fontWeight: "bold",
-            color: "#a8c176",
-            letterSpacing: "0",
-            fontSize: "16px",
-            transformOrigin: "bottom center",
-          }}
-        >
-          {"clicca qui per aprire".split("").map((char, i) => (
-            <Box
-              key={i}
-              component="span"
-              sx={{
-                position: "absolute",
-                left: "50%",
-                bottom: 0,
-                transform: {
-                  xs: `rotate(${i * 6 - 65}deg) translateY(-90px)`,
-                  md: `rotate(${i * 6 - 65}deg) translateY(-100px)`
-                }
-              }}
-            >
-              {char}
-            </Box>
-          ))}
-        </Box>
-      </Box>
+        {config.sigillo}
+      </textPath>
+    </text>
+  </svg>
+</Box>
+
 
       {/* Sigillo con animazione */}
       <ButtonBase
@@ -135,5 +182,6 @@ export default function Cover() {
       </ButtonBase>
     </Box>
     </Container>
+    </>
   );
 }

@@ -1,17 +1,13 @@
 import Slider from "react-slick";
 import { Box, useMediaQuery } from "@mui/material";
-import useConfig from "../hooks/useConfig";
 import { useNavigate } from "react-router-dom";
 import Card from "./Card";
 
 
-export default function CarouselLinks() {
-  const { config, loading, error } = useConfig();
+export default function CarouselLinks({ config }) {
+  
   const isDesktop = useMediaQuery("(min-width:768px)");
   const navigate = useNavigate();
-
-  if (loading) return null; // oppure un loader 
-  if (error) return <p>Errore: {error}</p>;
 
   const items = [
     {
@@ -52,7 +48,7 @@ export default function CarouselLinks() {
     centerMode: true,
     centerPadding: isDesktop ? "55px" : "-5px",
   };
-
+  if (!config) return null;
   return (
     <Box sx={{ width: "100%", maxWidth: "360px", margin: "0 auto 0 40px" }}>
       <Slider {...settings}>

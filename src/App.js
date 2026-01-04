@@ -6,10 +6,12 @@ import Regalo from "./components/Regalo";
 import { ThemeProvider } from "@mui/material/styles";
 import { Container } from "@mui/material";
 import theme from "./Theme";
+import { LanguageProvider } from "./context/LanguageContext";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
+      <LanguageProvider>
       <HashRouter>
       <Container 
           maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px 0" }}
@@ -28,6 +30,7 @@ export default function App() {
         </Routes>
       </Container>
       </HashRouter>
+      </LanguageProvider>
     </ThemeProvider>
   );
 }
