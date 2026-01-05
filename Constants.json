@@ -47,6 +47,14 @@
         "banca": "<strong>Banca:</strong> [nome banca]",
         "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
       }
+    },
+    "calendar": {
+      "title": "Conferma Partecipaizione",
+      "start": "20260523T180000",
+      "end": "20260523T230000",
+      "description": "Matrimonio Irene&Anton",
+      "location": "Roma",
+      "buttonText": "Aggiungi al calendario"
     }
   },
   "en": {

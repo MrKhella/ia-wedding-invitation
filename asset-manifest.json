@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ia-wedding-invitation/static/css/main.8b6d487f.css",
-    "main.js": "/ia-wedding-invitation/static/js/main.1d9a1a2c.js",
+    "main.js": "/ia-wedding-invitation/static/js/main.ad40048f.js",
     "static/js/453.0d3574e8.chunk.js": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js",
     "static/media/slick.svg": "/ia-wedding-invitation/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/ia-wedding-invitation/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "index.html": "/ia-wedding-invitation/index.html",
     "static/media/slick.woff": "/ia-wedding-invitation/static/media/slick.295183786cd8a1389865.woff",
     "main.8b6d487f.css.map": "/ia-wedding-invitation/static/css/main.8b6d487f.css.map",
-    "main.1d9a1a2c.js.map": "/ia-wedding-invitation/static/js/main.1d9a1a2c.js.map",
+    "main.ad40048f.js.map": "/ia-wedding-invitation/static/js/main.ad40048f.js.map",
     "453.0d3574e8.chunk.js.map": "/ia-wedding-invitation/static/js/453.0d3574e8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b6d487f.css",
-    "static/js/main.1d9a1a2c.js"
+    "static/js/main.ad40048f.js"
   ]
 }
