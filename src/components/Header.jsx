@@ -15,6 +15,7 @@ export default function Header() {
               display: "flex",
               justifyContent: "flex-end",
               alignItems: "flex-start",
+              justifyItems:"center",
               paddingX: "110px",
           }}
           >
@@ -31,7 +32,7 @@ export default function Header() {
         //   fontFamily: default,
           textAlign: "center",
           fontStyle: "italic",
-          marginTop: "10px",
+          margin: "10px",
           textShadow:"0 4px 20px rgba(136, 156, 130)" 
         }}
       >

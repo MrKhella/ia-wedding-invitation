@@ -31,7 +31,7 @@ export default function Invite() {
             fontSize: "22px",
             fontFamily: "Georgia, serif",
             marginBottom: "10px",
-            padding:"0 30px"
+            padding:"30px"
           }}
         >
           {config.introText}

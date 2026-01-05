@@ -20,7 +20,7 @@ export default function Card({ item, isVideo }) {
         backgroundSize: "cover",
         backgroundPosition: "center",
         margin: 0,
-        boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
+        boxShadow: isVideo ? "0 4px 20px rgba(0,0,0,0.75)" : "0 4px 20px rgba(0,0,0,0.25)",
       }}
     >
       {!isVideo &&
@@ -29,7 +29,7 @@ export default function Card({ item, isVideo }) {
             sx={{
               position: "absolute",
               inset: 0,
-              background: "rgba(0,0,0,0.5)",
+              background: "rgba(0,0,0,0.25)",
             }}
           />
 
@@ -88,7 +88,7 @@ export default function Card({ item, isVideo }) {
           </Box>
         </>
       }
-
+{/* video card */}
       {isVideo &&
         <>
           <Box

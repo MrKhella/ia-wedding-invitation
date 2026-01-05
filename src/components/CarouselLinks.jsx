@@ -47,7 +47,7 @@ export default function CarouselLinks({ config }) {
     swipeToSlide: true,
     arrows: isDesktop,
     centerMode: true,
-    centerPadding: isDesktop ? "55px" : "20px",
+    centerPadding: isDesktop ? "55px" : "10px",
   };
   if (!config) return null;
   return (
