@@ -33,6 +33,15 @@ export default function Rispondi({ config }) {
           {config.whatsapp.noButton}
         </a>
       </Box>
+
+      <Typography
+        sx={{
+          fontSize: "15px",
+        }}
+      >
+        {config.whatsapp.deathLineText}
+        <strong>{config.whatsapp.deathLineDate}</strong>
+      </Typography>
     </Box>
   );
 }
