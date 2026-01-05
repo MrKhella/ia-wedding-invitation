@@ -31,7 +31,8 @@
       "noButton":"NO",
       "yesMessage": "Sì, parteciperò!",
       "noMessage": "Mi dispiace, non potrò partecipare.",
-      "deathLineText": ""
+      "deathLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
       "headerTxt": "",
@@ -73,7 +74,8 @@
       "noButton":"NO",
       "yesMessage": "Yes, I will attend!",
       "noMessage": "Sorry, I won’t be able to attend.",
-      "deathLineText":""
+      "deathLineText":"[eng]Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
       "headerTxt": "",
@@ -116,7 +118,8 @@
       "noButton":"لأ",
       "yesMessage": "طبعاً، هكون موجود",
       "noMessage": "آسف، مش هقدر أحضر.",
-      "deathLineText":""
+      "deathLineText":"[ar]Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
       "headerTxt": "",
