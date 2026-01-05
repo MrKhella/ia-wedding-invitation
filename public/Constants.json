@@ -35,6 +35,11 @@
       "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
+      "name": "Regalo",
+      "url": "/regalo",
+      "emoji": "",
+      "faIcon": "present",
+      "img": "/ia-wedding-invitation/img/regalo.jpg",
       "headerTxt": "",
       "footerTxt": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
       "iban": "ITxxxxxxxx",

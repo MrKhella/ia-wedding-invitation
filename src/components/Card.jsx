@@ -1,12 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faChurch } from "@fortawesome/free-solid-svg-icons";
+import { faChurch , faHandHoldingHeart , faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ item, isVideo }) {
   const iconMap = {
     "location-dot": faLocationDot,
     "church": faChurch,
+    "present": faHandHoldingHeart,
   };
   return (
     <Box
@@ -52,9 +52,9 @@ export default function Card({ item, isVideo }) {
                 fontStyle: "italic",
               }}
             >
-              {item.faIconLocation && (
+              {item.faIcon && (
                 <FontAwesomeIcon
-                  icon={iconMap[item.faIconLocation]}
+                  icon={iconMap[item.faIcon]}
                   style={{ marginRight: "8px" }}
                 />
               )}

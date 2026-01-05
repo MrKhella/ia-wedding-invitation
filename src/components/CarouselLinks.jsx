@@ -12,16 +12,16 @@ export default function CarouselLinks({ config }) {
   const items = [
     
     {
-      title: "Regalo",
-      emoji: "✅",
-      url: "/regalo",
+      title: `${config.regalo.name}`,
+      url: `${config.regalo.url}`,
+      faIcon: `${config.regalo.faIcon}`,
       isExternal: false,
-      img: "/ia-wedding-invitation/img/regalo.jpg",
+      img: `${config.regalo.img}`,
     },
     {
       title: `${config.chiesa.name}`,
       emoji: `${config.chiesa.emoji}`,
-      faIconLocation: `${config.location.faIcon}`,
+      faIcon: `${config.location.faIcon}`,
       url: `${config.chiesa.url}`,
       isExternal: true,
       img: `${config.chiesa.img}`,
@@ -30,7 +30,7 @@ export default function CarouselLinks({ config }) {
     {
       title: `${config.location.name}`,
       emoji: `${config.location.emoji}`,
-      faIconLocation: `${config.location.faIcon}`,
+      faIcon: `${config.location.faIcon}`,
       url: `${config.location.url}`,
       isExternal: true,
       img: `${config.location.img}`,
