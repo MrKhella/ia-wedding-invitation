@@ -5,7 +5,7 @@ export default function Rispondi({ config }) {
 
   if (!config) return null;
   return (
-    <Box sx={{ textAlign: "center", marginTop: "0" }}>
+    <Box sx={{ textAlign: "center", marginTop: "0" , padding: "20px"}}>
       <Typography
         sx={{
           fontSize: "22px",
