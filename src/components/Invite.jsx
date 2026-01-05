@@ -5,6 +5,7 @@ import Rispondi from "./Rispondi";
 import useConfig from "../hooks/useConfig";
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import Card from './Card';
 
 export default function Invite() {
 
@@ -19,7 +20,12 @@ export default function Invite() {
   return (
     <div id="invite" className="page active" style={{ direction: config.direction || "ltr" }}>
       <Header />
-      <Box sx={{ textAlign: "center", margin: "10px"}}>
+      <Box sx={{ textAlign: "center", margin: "10px" }}>
+
+        <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", }} >
+          <Card isVideo={true} />
+        </Box>
+
         <Typography
           sx={{
             fontSize: "22px",
