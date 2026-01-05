@@ -58,10 +58,10 @@ export default function Regalo() {
           >
             <Typography
               sx={{
-                fontFamily: "Playfair Display, serif",
+                fontFamily: "monospace",
                 fontSize: "22px",
                 fontWeight: "bold",
-                mb: 1,
+                // mb: 1,
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
             >
@@ -73,7 +73,7 @@ export default function Regalo() {
                 fontFamily: "monospace",
                 fontSize: "18px",
                 letterSpacing: "1px",
-                mb: 2,
+                // mb: 1,
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
             >
@@ -82,31 +82,29 @@ export default function Regalo() {
 
             <Typography
               sx={{
-                fontFamily: "Playfair Display, serif",
+                whiteSpace: "pre-line",
+                fontFamily: "monospace",
                 fontSize: "16px",
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
-            >
-              {config?.regalo.page.ibanName}
-            </Typography>
+              dangerouslySetInnerHTML={{ __html:config?.regalo.page.ibanName}}
+            />
             <Typography
               sx={{
-                fontFamily: "Playfair Display, serif",
-                fontSize: "18px",
+                fontFamily: "monospace",
+                fontSize: "16px",
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
-            >
-              {config?.regalo.page.banca}
-            </Typography>
+              dangerouslySetInnerHTML={{ __html:config?.regalo.page.banca}}
+            />
             <Typography
               sx={{
-                fontFamily: "Playfair Display, serif",
-                fontSize: "18px",
+                fontFamily: "monospace",
+                fontSize: "16px",
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
-            >
-              {config?.regalo.page.bic_swift}
-            </Typography>
+              dangerouslySetInnerHTML={{ __html:config?.regalo.page.bic_swift}}
+            />
           </Box>
         </Box>
 
