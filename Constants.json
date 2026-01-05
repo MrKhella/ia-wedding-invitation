@@ -72,8 +72,8 @@
       "question": "Will you attend?",
       "yesButton":"YES",
       "noButton":"NO",
-      "yesMessage": "Yes, I will attend!",
-      "noMessage": "Sorry, I won’t be able to attend.",
+      "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
+      "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
       "deathLineText":"[eng]Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
       "deathLineDate":"23 Maggio 2026"
     },
