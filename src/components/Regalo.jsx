@@ -15,7 +15,7 @@ export default function Regalo() {
     <>
       <Header />
 
-      <Container maxWidth="sm" sx={{ mt: 6, mb: 10, textAlign: "center" }}>
+      <Container maxWidth="sm" sx={{ textAlign: "center" }}>
         
         {/* Frase iniziale */}
         <Typography

@@ -13,10 +13,10 @@ export default function Header() {
         {/* Contenitore delle due immagini */}
           <Box sx={{
               display: "flex",
-              justifyContent: "flex-end",
+              justifyContent: "center",
               alignItems: "flex-start",
               justifyItems:"center",
-              paddingX: "110px",
+              // paddingX: "110px",
           }}
           >
         {/* Immagine sinistra */}

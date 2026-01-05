@@ -14,8 +14,8 @@ export default function Footer() {
           <Box
               sx={{
                   display: "flex",
-                  justifyContent: "flex-start",
-                  paddingRight: "20px",
+                  justifyContent: "center",
+                  // paddingRight: "20px",
               }}
           >
               <img
