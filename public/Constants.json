@@ -35,7 +35,7 @@
       "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
-      "name": "Regalo",
+      "name": "Il vostro regalo per noi",
       "url": "/regalo",
       "emoji": "",
       "faIcon": "present",
@@ -83,6 +83,11 @@
       "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
+      "name": "Your gift for us",
+      "url": "/regalo",
+      "emoji": "",
+      "faIcon": "present",
+      "img": "/ia-wedding-invitation/img/regalo.jpg",
       "headerTxt": "",
       "footerTxt": "[en]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
       "iban": "ITxxxxxxxx",
@@ -127,6 +132,11 @@
       "deathLineDate":"23 Maggio 2026"
     },
     "regalo": {
+      "name": "هديتكم لينا",
+      "url": "/regalo",
+      "emoji": "",
+      "faIcon": "present",
+      "img": "/ia-wedding-invitation/img/regalo.jpg",
       "headerTxt": "",
       "footerTxt": "[ar]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
       "iban": "ITxxxxxxxx",
