@@ -29,8 +29,8 @@
       "question":"Parteciperai?",
       "yesButton":"SI",
       "noButton":"NO",
-      "yesMessage": "Sì, parteciperò!",
-      "noMessage": "Mi dispiace, non potrò partecipare.",
+      "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
+      "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
       "deathLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
       "deathLineDate":"23 Maggio 2026"
     },
