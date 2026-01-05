@@ -40,11 +40,13 @@
       "emoji": "",
       "faIcon": "present",
       "img": "/ia-wedding-invitation/img/regalo.jpg",
-      "headerTxt": "",
-      "footerTxt": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
-      "iban": "ITxxxxxxxx",
-      "intestatario": "Anton Khella & Irene De Meo",
-      "Banca": ""
+      "page": {
+        "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
+        "iban": "ITxxxxxxxx",
+        "ibanName": "Intestato a: Anton Khella & Irene De Meo",
+        "banca": "Banca: [nome banca]",
+        "bic_swift": "BIC SWIFT: [codice bic swift]"
+      }
     }
   },
   "en": {
@@ -88,11 +90,13 @@
       "emoji": "",
       "faIcon": "present",
       "img": "/ia-wedding-invitation/img/regalo.jpg",
-      "headerTxt": "",
-      "footerTxt": "[en]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
-      "iban": "ITxxxxxxxx",
-      "intestatario": "Anton Khella & Irene De Meo",
-      "Banca": ""
+      "page":{
+        "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution:",
+        "iban": "ITxxxxxxxx",
+        "ibanName": "Account holder: Anton Khella & Irene De Meo",
+        "banca": "Bank: [nome banca]",
+        "bic_swift": "BIC SWIFT: [codice bic swift]"
+      }
     }
   },
   "ar": {
@@ -137,11 +141,13 @@
       "emoji": "",
       "faIcon": "present",
       "img": "/ia-wedding-invitation/img/regalo.jpg",
-      "headerTxt": "",
-      "footerTxt": "[ar]Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
-      "iban": "ITxxxxxxxx",
-      "intestatario": "Anton Khella & Irene De Meo",
-      "Banca": ""
+      "page":{
+        "heroText": "حضوركم معانا هو اهم هدية، بس لو حابين تفرحونا بحاجة، مساهمة علي قدكم لشهر العسل هتبقى أحلى زكرة لينا",
+        "iban": "ITxxxxxxxx",
+        "ibanName": "Account holder: Anton Khella & Irene De Meo",
+        "banca": "Bank: [nome banca]",
+        "bic_swift": "BIC SWIFT: [codice bic swift]"
+      }
     }
   }
 }
