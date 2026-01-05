@@ -47,7 +47,7 @@
     "introText": "We are delighted to invite you to our wedding",
     "footerText":"Your presence will make this day unforgettable.",
     "location": {
-      "name": "Reception",
+      "name": "Location",
       "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z/data=!3m1!4b1!4m6!3m5!1s0x132589cb27893689:0xef308f8f2cfb9431!8m2!3d41.8421304!4d12.5728286!16s%2Fg%2F1vt_sdcc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "📍",
       "faIcon": "location-dot",
