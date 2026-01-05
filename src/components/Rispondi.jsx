@@ -40,8 +40,45 @@ export default function Rispondi({ config }) {
         }}
       >
         {config.whatsapp.deathLineText}
-        <strong>{config.whatsapp.deathLineDate}</strong>
+        <br /><strong>{config.whatsapp.deathLineDate}</strong>
       </Typography>
+      {/* BOX PROMEMORIA CALENDAR */}
+      <Box sx={{ marginTop: "20px" }}>
+        <a
+          href={`data:text/calendar;charset=utf8,${encodeURIComponent(
+            `BEGIN:VCALENDAR
+              VERSION:2.0
+              BEGIN:VEVENT
+              URL:https://mrkhella.github.io/ia-wedding-invitation/
+              DTSTART:${config.calendar.start}
+              DTEND:${config.calendar.end}
+              SUMMARY:${config.calendar.title}
+              DESCRIPTION:${config.calendar.description}
+              LOCATION:${config.calendar.location}
+              END:VEVENT
+              END:VCALENDAR`
+          )}`}
+          download="I&A-wedding-reminder.ics"
+          className="btn"
+          style={{
+            display: "block",
+            width: "100%",
+            background: "rgba(136, 156, 130)",
+            padding: "12px 0",
+            borderRadius: "8px",
+            marginTop: "10px",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
+            textAlign: "center",
+            color: "white",
+            fontWeight: "bold",
+            textDecoration: "none",
+          }}
+        >
+          {config.calendar.buttonText}
+        </a>
+      </Box>
+
+
     </Box>
   );
 }
