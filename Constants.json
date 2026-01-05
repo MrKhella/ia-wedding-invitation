@@ -116,8 +116,8 @@
       "question": "هتحضر؟",
       "yesButton":"أيوه",
       "noButton":"لأ",
-      "yesMessage": "طبعاً، هكون موجود",
-      "noMessage": "آسف، مش هقدر أحضر.",
+      "yesMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nأيوه، هاجي! 🥳",
+      "noMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
       "deathLineText":"[ar]Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
       "deathLineDate":"23 Maggio 2026"
     },
