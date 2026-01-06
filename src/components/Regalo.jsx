@@ -11,7 +11,8 @@ export default function Regalo() {
     if (!config) return null;
 
   return (
-    <>
+        <div id="invite" className="page active" style={{ direction: config.direction || "ltr" }}>
+
       <Header />
 
       <Container maxWidth="sm" sx={{ textAlign: "center" }}>
@@ -110,6 +111,6 @@ export default function Regalo() {
       </Container>
 
       <Footer config={config}/>
-    </>
+    </div>
   );
 }
