@@ -31,8 +31,8 @@
       "noButton":"NO",
       "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
-      "deathLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
-      "deathLineDate":"23 Maggio 2026"
+      "deadLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deadLineDate":"23 Maggio 2026"
     },
     "regalo": {
       "name": "Il vostro regalo per noi",
@@ -49,12 +49,13 @@
       }
     },
     "calendar": {
-      "title": "Conferma Partecipaizione",
-      "start": "20260523T180000",
-      "end": "20260523T230000",
-      "description": "Matrimonio Irene&Anton",
+      "title": "Risposta Partecipaizione - Matrimonio Irene & Anton",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description": "Matrimonio 11/07/2026",
       "location": "Roma",
-      "buttonText": "Aggiungi al calendario"
+      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
+      "textBox": "Hai paura di dimenticarti?<br/>Aggiungi un promemoria al calendario"
     }
   },
   "en": {
@@ -89,8 +90,8 @@
       "noButton":"NO",
       "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
-      "deathLineText":"We kindly ask you to confirm using the buttons above by no later than ",
-      "deathLineDate":"23 May 2026"
+      "deadLineText":"We kindly ask you to confirm using the buttons above by no later than ",
+      "deadLineDate":"23 May 2026"
     },
     "regalo": {
       "name": "Your gift for us",
@@ -105,6 +106,15 @@
         "banca": "<strong>Bank:</strong> [nome banca]",
         "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
       }
+    },
+    "calendar": {
+      "title": "Attendance Response – Irene & Anton's Wedding",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description": "Wedding Day - 11/07/2026",
+      "location": "Rome",
+      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
+      "textBox": "Afraid you might forget?<br/>Add a reminder to your calendar"
     }
   },
   "ar": {
@@ -140,8 +150,8 @@
       "noButton":"لأ",
       "yesMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nأيوه، هاجي! 🥳",
       "noMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
-      "deathLineText":"الرجاء تأكيد الحضور من خلال الزراير الي فوق قبل يوم ",
-      "deathLineDate":"23/05/2026"
+      "deadLineText":"الرجاء تأكيد الحضور من خلال الزراير الي فوق قبل يوم ",
+      "deadLineDate":"23/05/2026"
     },
     "regalo": {
       "name": "هديتكم لينا",
@@ -156,6 +166,15 @@
         "banca": "<strong>Bank:</strong> [nome banca]",
         "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
       }
+    },
+    "calendar": {
+      "title": "تأكيد الرد - Irene & Anton's Wedding",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description":"الفرح 11/07/2026",
+      "location": "روما",
+      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
+      "textBox": "خايف تنسى؟<br/>ضيفه عندك على التقويم"
     }
   }
 }
