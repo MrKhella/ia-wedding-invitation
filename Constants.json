@@ -49,13 +49,13 @@
       }
     },
     "calendar": {
-      "title": "Risposta Partecipaizione - Matrimonio Irene & Anton",
-      "start": "20260523T120000",
-      "end": "20260523T150000",
-      "description": "Matrimonio 11/07/2026",
+      "title": "Matrimonio Irene & Anton",
+      "start": "20260711T160000",
+      "end": "20260712T013000",
       "location": "Roma",
+      "description": "Link invito:",
       "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "Hai paura di dimenticarti?<br/>Aggiungi un promemoria al calendario"
+      "textBox": "Aggiungi l'evento al tuo calendario"
     }
   },
   "en": {
@@ -108,13 +108,13 @@
       }
     },
     "calendar": {
-      "title": "Attendance Response – Irene & Anton's Wedding",
-      "start": "20260523T120000",
-      "end": "20260523T150000",
-      "description": "Wedding Day - 11/07/2026",
+      "title": "Irene & Anton's Wedding Day",
+      "start": "20260711T160000",
+      "end": "20260712T013000",
       "location": "Rome",
+      "description": "Invite link:",
       "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "Afraid you might forget?<br/>Add a reminder to your calendar"
+      "textBox": "Add a reminder to your calendar"
     }
   },
   "ar": {
@@ -168,13 +168,13 @@
       }
     },
     "calendar": {
-      "title": "تأكيد الرد - Irene & Anton's Wedding",
-      "start": "20260523T120000",
-      "end": "20260523T150000",
-      "description":"الفرح 11/07/2026",
+      "title": "ليلة فرح أنطون & إيريني",
+      "start": "20260711T160000",
+      "end": "20260712T013000",
       "location": "روما",
+      "description":"لينك الدعوة:",
       "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "خايف تنسى؟<br/>ضيفه عندك على التقويم"
+      "textBox": "ضيفه عندك على التقويم"
     }
   }
 }
