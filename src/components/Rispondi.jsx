@@ -1,11 +1,11 @@
 import { Box, Typography } from "@mui/material";
 
 export default function Rispondi({ config }) {
-  const { phone, question , yesMessage, noMessage , deathLineText } = config.whatsapp;
+  const { phone, question, yesMessage, noMessage, deathLineText } = config.whatsapp;
 
   if (!config) return null;
   return (
-    <Box sx={{ textAlign: "center", marginTop: "0" , padding: "20px"}}>
+    <Box sx={{ textAlign: "center", marginTop: "0", padding: "20px" }}>
       <Typography
         sx={{
           fontSize: "22px",
@@ -20,7 +20,7 @@ export default function Rispondi({ config }) {
         <a
           href={`https://wa.me/${phone}?text=${encodeURIComponent(yesMessage)}`}
           className="btn"
-          style={{ width: "100px", background: "rgba(136, 156, 130)" , boxShadow:"0 4px 20px rgba(0,0,0,0.25)" }}
+          style={{ width: "100px", background: "rgba(136, 156, 130)", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
         >
           {config.whatsapp.yesButton}
         </a>
@@ -28,7 +28,7 @@ export default function Rispondi({ config }) {
         <a
           href={`https://wa.me/${phone}?text=${encodeURIComponent(noMessage)}`}
           className="btn"
-          style={{ width: "100px", background: "#999" , boxShadow:"0 4px 20px rgba(0,0,0,0.25)"  }}
+          style={{ width: "100px", background: "#999", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
         >
           {config.whatsapp.noButton}
         </a>
@@ -43,40 +43,67 @@ export default function Rispondi({ config }) {
         <br /><strong>{config.whatsapp.deathLineDate}</strong>
       </Typography>
       {/* BOX PROMEMORIA CALENDAR */}
-      <Box sx={{ marginTop: "20px" }}>
+      {/* TITOLO */}
+      <Typography
+        sx={{
+          fontSize: "16px",
+          fontFamily: "Georgia, serif",
+          marginTop: "30px",
+          marginBottom: "5px",
+          textAlign: "center",
+        }}
+      >
+        Hai paura di dimenticarti?<br/>Aggiungi un promemoria al calendario
+      </Typography>
+      <Box
+        sx={{
+          // marginTop: "30px",
+          display: "flex",
+          justifyContent: "center",
+          gap: "30px",
+        }}
+      >
+        {/* GOOGLE CALENDAR */}
+        <a
+          href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+            config.calendar.title
+          )}&dates=${config.calendar.start}/${config.calendar.end}&details=${encodeURIComponent(
+            config.calendar.description
+          )}&location=${encodeURIComponent(config.calendar.location)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/ia-wedding-invitation/icons/google-calendar.png"
+            alt="Google Calendar"
+            style={{ width: "140px", height: "48px" }}
+          />
+        </a>
+
+        {/* APPLE CALENDAR (ICS) */}
         <a
           href={`data:text/calendar;charset=utf8,${encodeURIComponent(
             `BEGIN:VCALENDAR
-              VERSION:2.0
-              BEGIN:VEVENT
-              URL:https://mrkhella.github.io/ia-wedding-invitation/
-              DTSTART:${config.calendar.start}
-              DTEND:${config.calendar.end}
-              SUMMARY:${config.calendar.title}
-              DESCRIPTION:${config.calendar.description}
-              LOCATION:${config.calendar.location}
-              END:VEVENT
-              END:VCALENDAR`
+            VERSION:2.0
+            BEGIN:VEVENT
+            DTSTART:${config.calendar.start}
+            DTEND:${config.calendar.end}
+            SUMMARY:${config.calendar.title}
+            DESCRIPTION:${config.calendar.description}
+            LOCATION:${config.calendar.location}
+            END:VEVENT
+            END:VCALENDAR`
           )}`}
-          download="I&A-wedding-reminder.ics"
-          className="btn"
-          style={{
-            display: "block",
-            width: "100%",
-            background: "rgba(136, 156, 130)",
-            padding: "12px 0",
-            borderRadius: "8px",
-            marginTop: "10px",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
-            textAlign: "center",
-            color: "white",
-            fontWeight: "bold",
-            textDecoration: "none",
-          }}
+          download="wedding-reminder.ics"
         >
-          {config.calendar.buttonText}
+          <img
+            src="/ia-wedding-invitation/icons/apple-calendar.png"
+            alt="Apple Calendar"
+            style={{ width: "140px", height: "48px" }}
+          />
         </a>
       </Box>
+
 
 
     </Box>
