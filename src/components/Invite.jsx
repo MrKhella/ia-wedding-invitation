@@ -28,13 +28,13 @@ export default function Invite() {
 
         <Typography
           sx={{
-            fontSize: "22px",
-            fontFamily: "Georgia, serif",
+            fontSize: "18px",
+            // fontFamily: "Georgia, serif",
             marginBottom: "10px",
             padding:"30px"
           }}
+          dangerouslySetInnerHTML={{ __html:config.introText}}
         >
-          {config.introText}
         </Typography>
         <Typography
           sx={{
