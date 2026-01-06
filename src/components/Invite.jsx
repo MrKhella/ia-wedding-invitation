@@ -67,7 +67,7 @@ export default function Invite() {
         “ {config.footerText} ”
       </Typography>
       </Box>
-      <Footer />
+      <Footer config={config} />
     </div>
   );
 }
