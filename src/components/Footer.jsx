@@ -50,22 +50,7 @@ export default function Footer({config}) {
         </a>
 
         {/* APPLE CALENDAR (ICS) */}
-        <a
-          href={`data:text/calendar;charset=utf8,${encodeURIComponent(
-            `BEGIN:VCALENDAR
-              VERSION:2.0
-              BEGIN:VEVENT
-              DTSTART:${config.calendar.start}
-              DTEND:${config.calendar.end}
-              SUMMARY:${config.calendar.title}
-              DESCRIPTION:${config.calendar.description}
-              URL:${config.calendar.link}
-              LOCATION:${config.calendar.location}
-              END:VEVENT
-              END:VCALENDAR`
-          )}`}
-          download="IA-wedding-reminder.ics"
-        >
+        <a href="/ia-wedding-reminder.ics" download="ia-wedding-reminder.ics">
 
           <img
             src="/ia-wedding-invitation/icons/apple-calendar.png"
