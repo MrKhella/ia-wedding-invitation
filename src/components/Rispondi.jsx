@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 export default function Rispondi({ config }) {
-  const { phone, question, yesMessage, noMessage, deathLineText } = config.whatsapp;
+  const { phone, question, yesMessage, noMessage, deadLineText } = config.whatsapp;
 
   if (!config) return null;
   return (
@@ -39,8 +39,8 @@ export default function Rispondi({ config }) {
           fontSize: "15px",
         }}
       >
-        {config.whatsapp.deathLineText}
-        <br /><strong>{config.whatsapp.deathLineDate}</strong>
+        {config.whatsapp.deadLineText}
+        <br /><strong>{config.whatsapp.deadLineDate}</strong>
       </Typography>
       {/* BOX PROMEMORIA CALENDAR */}
       {/* TITOLO */}
