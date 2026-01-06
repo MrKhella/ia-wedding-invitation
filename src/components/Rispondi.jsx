@@ -52,9 +52,8 @@ export default function Rispondi({ config }) {
           marginBottom: "5px",
           textAlign: "center",
         }}
-      >
-        Hai paura di dimenticarti?<br/>Aggiungi un promemoria al calendario
-      </Typography>
+        dangerouslySetInnerHTML={{ __html:config?.calendar.textBox}}
+      />
       <Box
         sx={{
           // marginTop: "30px",
@@ -68,11 +67,12 @@ export default function Rispondi({ config }) {
           href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
             config.calendar.title
           )}&dates=${config.calendar.start}/${config.calendar.end}&details=${encodeURIComponent(
-            config.calendar.description
+            `${config.calendar.description}\n\nLink: ${config.calendar.link}`
           )}&location=${encodeURIComponent(config.calendar.location)}`}
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <img
             src="/ia-wedding-invitation/icons/google-calendar.png"
             alt="Google Calendar"
@@ -84,18 +84,20 @@ export default function Rispondi({ config }) {
         <a
           href={`data:text/calendar;charset=utf8,${encodeURIComponent(
             `BEGIN:VCALENDAR
-            VERSION:2.0
-            BEGIN:VEVENT
-            DTSTART:${config.calendar.start}
-            DTEND:${config.calendar.end}
-            SUMMARY:${config.calendar.title}
-            DESCRIPTION:${config.calendar.description}
-            LOCATION:${config.calendar.location}
-            END:VEVENT
-            END:VCALENDAR`
+              VERSION:2.0
+              BEGIN:VEVENT
+              DTSTART:${config.calendar.start}
+              DTEND:${config.calendar.end}
+              SUMMARY:${config.calendar.title}
+              DESCRIPTION:${config.calendar.description}
+              URL:${config.calendar.link}
+              LOCATION:${config.calendar.location}
+              END:VEVENT
+              END:VCALENDAR`
           )}`}
-          download="wedding-reminder.ics"
+          download="IA-wedding-reminder.ics"
         >
+
           <img
             src="/ia-wedding-invitation/icons/apple-calendar.png"
             alt="Apple Calendar"

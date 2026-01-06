@@ -49,12 +49,13 @@
       }
     },
     "calendar": {
-      "title": "Conferma Partecipaizione",
-      "start": "20260523T180000",
-      "end": "20260523T230000",
-      "description": "Matrimonio Irene&Anton",
+      "title": "Risposta Partecipaizione - Matrimonio Irene & Anton",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description": "Conferma Partecipaizione",
       "location": "Roma",
-      "buttonText": "Aggiungi al calendario"
+      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
+      "textBox": "Hai paura di dimenticarti?<br/>Aggiungi un promemoria al calendario"
     }
   },
   "en": {
@@ -105,6 +106,14 @@
         "banca": "<strong>Bank:</strong> [nome banca]",
         "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
       }
+    },
+    "calendar": {
+      "title": "Attendance Response – Irene & Anton's Wedding",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description": "Attendance Confirmation",
+      "location": "Rome",
+      "textBox": "Afraid you might forget?<br/>Add a reminder to your calendar"
     }
   },
   "ar": {
@@ -156,6 +165,14 @@
         "banca": "<strong>Bank:</strong> [nome banca]",
         "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
       }
+    },
+    "calendar": {
+      "title": "تأكيد الرد - Irene & Anton's Wedding",
+      "start": "20260523T120000",
+      "end": "20260523T150000",
+      "description": "تأكيد الحضور",
+      "location": "روما",
+      "textBox": "خايف تنسى؟<br/>ضيفه عندك على التقويم"
     }
   }
 }
