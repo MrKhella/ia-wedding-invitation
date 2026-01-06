@@ -1,10 +1,11 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
+URL:https://mrkhella.github.io/ia-wedding-invitation/
 DTSTART:20260711T160000
 DTEND:20260712T013000
 SUMMARY:Matrimonio Irene & Anton
-DESCRIPTION:Link invito:
+DESCRIPTION:Link invito: https://mrkhella.github.io/ia-wedding-invitation/
 LOCATION:Roma
 END:VEVENT
 END:VCALENDAR
