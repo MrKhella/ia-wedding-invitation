@@ -30,21 +30,25 @@ export default function Invite() {
           sx={{
             fontSize: "18px",
             // fontFamily: "Georgia, serif",
+            fontStyle: "italic",
             marginBottom: "10px",
             padding:"30px"
           }}
           dangerouslySetInnerHTML={{ __html:config.introText}}
         >
         </Typography>
+        <hr />
         <Typography
           sx={{
             fontSize: "36px",
             fontFamily: theme.typography.fonts.dancingScript,
             marginBottom: "10px",
+            textShadow:"0 4px 20px rgba(136, 156, 130)" 
           }}
         >
           <strong>{config.weddingDate}</strong>
         </Typography>
+        <hr />
         {/* <img src="/ia-wedding-invitation/saveDate.png" alt=""  width={400} height={100}/> */}
       </Box>
       <CarouselLinks config={config} />
