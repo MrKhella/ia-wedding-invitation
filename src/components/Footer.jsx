@@ -16,6 +16,7 @@ export default function Footer({config}) {
       <Typography
         sx={{
           fontSize: "16px",
+          fontWeight:"bold",
           fontFamily: "Georgia, serif",
           marginTop: "70px",
           marginBottom: "5px",

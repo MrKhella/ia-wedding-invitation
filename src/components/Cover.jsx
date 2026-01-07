@@ -52,7 +52,7 @@ export default function Cover() {
       zIndex: 9999
     }}
   >
-      <select value={lang} onChange={e => setLang(e.target.value)}>
+      <select name="comboLang" value={lang} onChange={e => setLang(e.target.value)}>
         <option value="it">🇮🇹 Italiano</option>
         <option value="en">🇬🇧 English</option>
         <option value="ar">🇪🇬 العربية</option>
@@ -167,7 +167,8 @@ export default function Cover() {
           height: { xs: 140, md: 180 },
           borderRadius: "50%",
           backgroundImage:
-            'url("/img/sigillo.png")',
+            // 'url("/img/sigillo.png")',
+            'url("/img/logo-icon.ico")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -182,7 +183,7 @@ export default function Cover() {
             letterSpacing: "2px",
           }}
         >
-          I&nbsp;&&nbsp;A
+          {/* I&nbsp;&&nbsp;A */}
         </Typography>
       </ButtonBase>
     </Box>

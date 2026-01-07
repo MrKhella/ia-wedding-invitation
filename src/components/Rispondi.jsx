@@ -36,7 +36,8 @@ export default function Rispondi({ config }) {
 
       <Typography
         sx={{
-          fontSize: "15px",
+          fontSize: "16px",
+          fontFamily:"Georgia"
         }}
       >
         {config.whatsapp.deadLineText}

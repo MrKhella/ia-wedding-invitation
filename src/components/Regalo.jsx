@@ -15,7 +15,12 @@ export default function Regalo() {
 
       <Header />
 
-      <Container maxWidth="sm" sx={{ textAlign: "center" }}>
+      <Container 
+      // maxWidth="sm" 
+      sx={{ 
+        textAlign: "center",
+        paddingX:"20px"
+      }}>
         
         {/* Frase iniziale */}
         <Typography
@@ -104,6 +109,14 @@ export default function Regalo() {
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
               }}
               dangerouslySetInnerHTML={{ __html:config?.regalo.page.bic_swift}}
+            />
+            <Typography
+              sx={{
+                fontFamily: "monospace",
+                fontSize: "16px",
+                textShadow:"0 2px 4px rgba(0,0,0,1)",
+              }}
+              dangerouslySetInnerHTML={{ __html:config?.regalo.page.causale}}
             />
           </Box>
         </Box>
