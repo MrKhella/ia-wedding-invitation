@@ -10,14 +10,6 @@ export default function CarouselLinks({ config }) {
   const navigate = useNavigate();
 
   const items = [
-    
-    {
-      title: `${config.regalo.name}`,
-      url: `${config.regalo.url}`,
-      faIcon: `${config.regalo.faIcon}`,
-      isExternal: false,
-      img: `${config.regalo.img}`,
-    },
     {
       title: `${config.chiesa.name}`,
       emoji: `${config.chiesa.emoji}`,
@@ -36,18 +28,27 @@ export default function CarouselLinks({ config }) {
       img: `${config.location.img}`,
       time: `${config.location.time}`,
     },
+    {
+      title: `${config.regalo.name}`,
+      url: `${config.regalo.url}`,
+      faIcon: `${config.regalo.faIcon}`,
+      isExternal: false,
+      img: `${config.regalo.img}`,
+    }
   ];
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: isDesktop ? 1.2 : 1.6,
+    slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: isDesktop,
     centerMode: true,
-    centerPadding: isDesktop ? "55px" : "10px",
+    initialSlide: 0,
+    focusOnSelect: true,
+    centerPadding: isDesktop ? "80px" : "81px",
   };
   if (!config) return null;
   return (
