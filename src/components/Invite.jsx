@@ -22,19 +22,29 @@ export default function Invite() {
       <Header />
       <Box sx={{ textAlign: "center", margin: "10px" }}>
 
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", }} >
-          <Card isVideo={true} />
-        </Box>
-
         <Typography
           sx={{
             fontSize: "18px",
             // fontFamily: "Georgia, serif",
             fontStyle: "italic",
-            marginBottom: "10px",
-            padding:"30px"
+            marginBottom: "30px",
+            paddingX: "30px"
           }}
-          dangerouslySetInnerHTML={{ __html:config.introText}}
+          dangerouslySetInnerHTML={{ __html: config.introText }}
+        >
+        </Typography>
+        <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", }} >
+          <Card isVideo={true} />
+        </Box>
+        <Typography
+          sx={{
+            fontSize: "20px",
+            // fontFamily: "Georgia, serif",
+            fontStyle: "italic",
+            // marginBottom: "10px",
+            padding: "30px 20px"
+          }}
+          dangerouslySetInnerHTML={{ __html: config.invitoText }}
         >
         </Typography>
         <hr />
@@ -68,7 +78,7 @@ export default function Invite() {
           textShadow:"0 4px 20px rgba(136, 156, 130)" 
         }}
       >
-        “ {config.footerText} ”
+        {config.footerText}
       </Typography>
       </Box>
       <Footer config={config} />

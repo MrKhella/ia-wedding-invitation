@@ -13,7 +13,7 @@ export default function CarouselLinks({ config }) {
     {
       title: `${config.chiesa.name}`,
       emoji: `${config.chiesa.emoji}`,
-      faIcon: `${config.location.faIcon}`,
+      faIcon: `${config.chiesa.faIcon}`,
       url: `${config.chiesa.url}`,
       isExternal: true,
       img: `${config.chiesa.img}`,

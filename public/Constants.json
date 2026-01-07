@@ -2,7 +2,8 @@
   "it": {
     "sigillo":"Clicca qui per aprire",
     "weddingDate": "Sabato 11 Luglio 2026",
-    "introText": "Sono stati i Romani a dettare l’usanza delle fedi nuziali poste all’anulare sinistro: si riteneva che la “vena amoris” passasse direttamente per questo dito, per poi arrivare al cuore.<br/><br/><strong>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</strong>",
+    "introText": "“Sono stati i Romani a dettare l'usanza delle fedi nuziali poste all’anulare sinistro: si riteneva che la \"vena amoris\" passasse direttamente per questo dito, per poi arrivare al cuore”",
+    "invitoText":"<strong>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</strong>",
     "footerText":"La vostra presenza renderà indimenticabile questo giorno.",
     "location": {
       "name": "Ricevimento",
@@ -61,7 +62,8 @@
   "en": {
     "sigillo":"Tap here to open",
     "weddingDate": "Saturday, July 11th 2026",
-    "introText": "It was the Romans who established the tradition of wearing wedding rings on the left ring finger: they believed that the “vena amoris” ran directly through this finger and led straight to the heart.<br/><br/><strong>We are delighted to invite you to our wedding</strong>",
+    "introText": "“It was the Romans who established the tradition of wearing wedding rings on the left ring finger: they believed that the \"vena amoris\" ran directly through this finger and led straight to the heart”",
+    "invitoText":"<strong>We are delighted to invite you to our wedding</strong>",
     "footerText":"Your presence will make this day unforgettable.",
     "location": {
       "name": "Location",
@@ -121,7 +123,8 @@
     "sigillo":"اضغط هنا لفتح الدعوة",
     "direction": "rtl",
     "weddingDate": "السبت ١١ يوليو ٢٠٢٦",
-    "introText": "الرومان هما اللي بدأوا عادة لبس دبل الجواز في الصباع الرابع من اليد الشمال، لأنهم كانوا معتقدين إن 'وريد الحب' بيمر من الصباع ده وبيوصل للقلب على طول<br/><br/><strong>وبكل فرح وسعادة، نتشرف بدعوة سيادتكم لحضور حفل زفافنا</strong>",
+    "introText": "”الرومان هما اللي بدأوا عادة لبس دبل الجواز في الصباع الرابع من اليد الشمال، لأنهم كانوا معتقدين إن \"وريد الحب\" بيمر من الصباع ده وبيوصل للقلب على طول“",
+    "invitoText":"<strong>وبكل فرح وسعادة، نتشرف بدعوة سيادتكم لحضور حفل زفافنا</strong>",
     "footerText":"وجودكم هيخلّي اليوم ده مايتنسيش ابداً",
     "location": {
       "name": "القاعة",
