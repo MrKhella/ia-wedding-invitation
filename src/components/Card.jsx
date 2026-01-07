@@ -1,13 +1,28 @@
+import React, { useState, useRef } from "react";
 import { Box, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChurch , faGift , faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import { faChurch, faGift, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 
 export default function Card({ item, isVideo }) {
+  const [audioEnabled, setAudioEnabled] = useState(false);
+  const videoRef = useRef(null);
+
   const iconMap = {
     "location-dot": faLocationDot,
     "church": faChurch,
     "present": faGift,
   };
+  const v = videoRef.current;
+  const toggleAudio = () => {
+              if (v) {
+                const newState = !audioEnabled;
+                v.muted = !newState;
+                v.play();
+                setAudioEnabled(newState);
+              }
+  }
   return (
     <Box
       sx={{
@@ -88,7 +103,7 @@ export default function Card({ item, isVideo }) {
           </Box>
         </>
       }
-{/* video card */}
+      {/* video card */}
       {isVideo &&
         <>
           <Box
@@ -101,26 +116,42 @@ export default function Card({ item, isVideo }) {
               justifyContent: "center",
             }}
           >
-            <video
-              playsInline
-              muted
-              autoPlay
-              loop
-              style={{
-                width: "300px",
-                height: "300px",
-                objectFit: "cover",
-                display: "block",
-              }}
-              onClick={(e) => {
-                 e.target.muted = !e.target.muted;
-                 e.target.play();
-                }}
+            {/* ICONA AUDIO ON/OFF */}
+            <Box sx={{ 
+              position: "absolute",
+              bottom: 12, right: 12, //posizione icona audio
+              zIndex: 10, 
+              cursor: "pointer", 
+              display: "flex", 
+              alignItems: "center", 
+              justifyContent: "center", 
+              // width: 22, 
+              // height: 22, 
+              // borderRadius: "50%", 
+              // background: "rgba(255,255,255,0.2)", 
+              // backdropFilter: "blur(4px)", 
+              transition: "0.3s", "&:hover": { background: "rgba(255,255,255,0.3)" }, }} 
+              onClick={toggleAudio}
             >
-              <source
-                src="/video/saveTheDate.mp4"
-                type="video/mp4"
-              />
+              {audioEnabled ? (
+                <VolumeUpIcon sx={{ fontSize: 18, color: "white" }} />
+              ) : (
+                <VolumeOffIcon sx={{ fontSize: 18, color: "white" }} />
+              )}
+            </Box>
+            {/* VIDEO */}
+            <video 
+            ref={videoRef} 
+            playsInline 
+            muted 
+            autoPlay 
+            loop 
+            style={{ 
+              width: "300px", 
+              height: "300px", 
+              objectFit: "cover", 
+              display: "block", }} >
+              <source src="/video/saveTheDate.mp4" type="video/mp4" />
             </video>
           </Box>
 
