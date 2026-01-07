@@ -9,7 +9,7 @@
       "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z/data=!3m1!4b1!4m6!3m5!1s0x132589cb27893689:0xef308f8f2cfb9431!8m2!3d41.8421304!4d12.5728286!16s%2Fg%2F1vt_sdcc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "📍",
       "faIcon": "location-dot",
-      "img": "/ia-wedding-invitation/img/ricevimento.jpeg",
+      "img": "/img/ricevimento.jpeg",
       "time": "Dalle ore 19:00"
     },
     "chiesa": {
@@ -17,7 +17,7 @@
       "url": "https://www.google.com/maps/place/Basilica+di+Santo+Stefano+Rotondo+al+Celio/@41.8845602,12.4941776,16z/data=!3m1!4b1!4m6!3m5!1s0x132f61c7cae3e9fb:0xbd7d43e12d2fbcc2!8m2!3d41.8845602!4d12.4967525!16zL20vMGJfcm55?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "⛪",
       "faIcon": "church",
-      "img": "/ia-wedding-invitation/img/chiesa.jpg",
+      "img": "/img/chiesa.jpg",
       "time": "Dalle ore 16:00"
     },
     "rsvpForm": {
@@ -39,7 +39,7 @@
       "url": "/regalo",
       "emoji": "",
       "faIcon": "present",
-      "img": "/ia-wedding-invitation/img/regalo.jpg",
+      "img": "/img/regalo.jpg",
       "page": {
         "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
         "iban": "ITxxxxxxxx",
@@ -68,7 +68,7 @@
       "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z/data=!3m1!4b1!4m6!3m5!1s0x132589cb27893689:0xef308f8f2cfb9431!8m2!3d41.8421304!4d12.5728286!16s%2Fg%2F1vt_sdcc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "📍",
       "faIcon": "location-dot",
-      "img": "/ia-wedding-invitation/img/ricevimento.jpeg",
+      "img": "/img/ricevimento.jpeg",
       "time": "From 7:00 PM"
     },
     "chiesa": {
@@ -76,7 +76,7 @@
       "url": "https://www.google.com/maps/place/Basilica+di+Santo+Stefano+Rotondo+al+Celio/@41.8845602,12.4941776,16z/data=!3m1!4b1!4m6!3m5!1s0x132f61c7cae3e9fb:0xbd7d43e12d2fbcc2!8m2!3d41.8845602!4d12.4967525!16zL20vMGJfcm55?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "⛪",
       "faIcon": "church",
-      "img": "/ia-wedding-invitation/img/chiesa.jpg",
+      "img": "/img/chiesa.jpg",
       "time": "From 4:00 PM"
     },
     "rsvpForm": {
@@ -98,7 +98,7 @@
       "url": "/regalo",
       "emoji": "",
       "faIcon": "present",
-      "img": "/ia-wedding-invitation/img/regalo.jpg",
+      "img": "/img/regalo.jpg",
       "page":{
         "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution:",
         "iban": "ITxxxxxxxx",
@@ -128,7 +128,7 @@
       "url": "https://www.google.com/maps/place/Casale+Consolini/@41.8421304,12.5702537,16z/data=!3m1!4b1!4m6!3m5!1s0x132589cb27893689:0xef308f8f2cfb9431!8m2!3d41.8421304!4d12.5728286!16s%2Fg%2F1vt_sdcc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "📍",
       "faIcon": "location-dot",
-      "img": "/ia-wedding-invitation/img/ricevimento.jpeg",
+      "img": "/img/ricevimento.jpeg",
       "time": "من الساعة ٧:٠٠ مساءً"
     },
     "chiesa": {
@@ -136,7 +136,7 @@
       "url": "https://www.google.com/maps/place/Basilica+di+Santo+Stefano+Rotondo+al+Celio/@41.8845602,12.4941776,16z/data=!3m1!4b1!4m6!3m5!1s0x132f61c7cae3e9fb:0xbd7d43e12d2fbcc2!8m2!3d41.8845602!4d12.4967525!16zL20vMGJfcm55?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D",
       "emoji": "⛪",
       "faIcon": "church",
-      "img": "/ia-wedding-invitation/img/chiesa.jpg",
+      "img": "/img/chiesa.jpg",
       "time": "من الساعة ٤:٠٠ مساءً"
     },
     "rsvpForm": {
@@ -158,7 +158,7 @@
       "url": "/regalo",
       "emoji": "",
       "faIcon": "present",
-      "img": "/ia-wedding-invitation/img/regalo.jpg",
+      "img": "/img/regalo.jpg",
       "page":{
         "heroText": "حضوركم معانا هو اهم هدية، بس لو حابين تفرحونا بحاجة، مساهمة على قدكم لشهر العسل هتبقى أحلى زكرة لينا",
         "iban": "ITxxxxxxxx",

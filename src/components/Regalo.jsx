@@ -39,7 +39,7 @@ export default function Regalo() {
             borderRadius: "16px",
             overflow: "hidden",
             boxShadow: "0 4px 20px rgba(0,0,0,0.25)",
-            backgroundImage: `url("/ia-wedding-invitation/img/fedi.png")`, // tua immagine
+            backgroundImage: `url("/img/fedi.png")`, // tua immagine
             backgroundSize: "cover",
             backgroundPosition: "center",
             // padding: "32px 20px",

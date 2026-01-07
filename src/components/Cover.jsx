@@ -167,7 +167,7 @@ export default function Cover() {
           height: { xs: 140, md: 180 },
           borderRadius: "50%",
           backgroundImage:
-            'url("/ia-wedding-invitation/img/sigillo.png")',
+            'url("/img/sigillo.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

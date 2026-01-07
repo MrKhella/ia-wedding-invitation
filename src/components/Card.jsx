@@ -102,6 +102,8 @@ export default function Card({ item, isVideo }) {
             }}
           >
             <video
+              playsInline
+              muted
               autoPlay
               loop
               style={{
@@ -110,9 +112,13 @@ export default function Card({ item, isVideo }) {
                 objectFit: "cover",
                 display: "block",
               }}
+              onClick={(e) => {
+                 e.target.muted = !e.target.muted;
+                 e.target.play();
+                }}
             >
               <source
-                src="/ia-wedding-invitation/video/saveTheDate.mp4"
+                src="/video/saveTheDate.mp4"
                 type="video/mp4"
               />
             </video>

@@ -43,7 +43,7 @@ export default function Footer({config}) {
         >
 
           <img
-            src="/ia-wedding-invitation/icons/google-calendar.png"
+            src="/icons/google-calendar.png"
             alt="Google Calendar"
             style={{ width: "140px", height: "48px" }}
           />
@@ -53,7 +53,7 @@ export default function Footer({config}) {
         <a href="/IA-wedding-reminder.ics" download="IA-wedding-reminder.ics">
 
           <img
-            src="/ia-wedding-invitation/icons/apple-calendar.png"
+            src="/icons/apple-calendar.png"
             alt="Apple Calendar"
             style={{ width: "140px", height: "48px" }}
           />
@@ -68,7 +68,7 @@ export default function Footer({config}) {
               }}
           >
               <img
-                  src="/ia-wedding-invitation/img/footer-img.jpg"
+                  src="/img/footer-img.jpg"
                   alt="footer"
                   style={{ width: "250px", opacity: 0.9 }}
               />
