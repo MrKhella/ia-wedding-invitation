@@ -14,8 +14,9 @@ export default function Card({ item, isVideo }) {
     "church": faChurch,
     "present": faGift,
   };
-  const v = videoRef.current;
+
   const toggleAudio = () => {
+    const v = videoRef.current;
               if (v) {
                 const newState = !audioEnabled;
                 v.muted = !newState;
@@ -125,9 +126,9 @@ export default function Card({ item, isVideo }) {
               display: "flex", 
               alignItems: "center", 
               justifyContent: "center", 
-              // width: 22, 
-              // height: 22, 
-              // borderRadius: "50%", 
+              width: 22, 
+              height: 22, 
+              borderRadius: "50%", 
               // background: "rgba(255,255,255,0.2)", 
               // backdropFilter: "blur(4px)", 
               transition: "0.3s", "&:hover": { background: "rgba(255,255,255,0.3)" }, }} 
