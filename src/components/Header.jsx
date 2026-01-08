@@ -12,22 +12,6 @@ export default function Header() {
         paddingBottom: "10px",
       }}
     >
-      {/* <Box
-      sx={{
-          display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "flex-end",
-          justifyItems: "center",
-          paddingX:"10%"
-      }}
-    >
-      <select name="comboLang" value={lang} onChange={e => setLang(e.target.value)}>
-        <option value="it">🇮🇹 Italiano</option>
-        <option value="en">🇬🇧 English</option>
-        <option value="ar">🇪🇬 العربية</option>
-      </select>
-    </Box> */}
-      
         {/* Contenitore delle due immagini */}
           <Box sx={{
               display: "flex",
