@@ -2,7 +2,8 @@
   "it": {
     "sigillo":"Clicca qui per aprire",
     "weddingDate": "Sabato 11 Luglio 2026",
-    "introText": "Sono stati i Romani a dettare l’usanza delle fedi nuziali poste all’anulare sinistro: si riteneva che la “vena amoris” passasse direttamente per questo dito, per poi arrivare al cuore.<br/><br/><strong>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</strong>",
+    "introText": "“Sono stati i Romani a dettare l'usanza delle fedi nuziali poste all’anulare sinistro: si riteneva che la \"vena amoris\" passasse direttamente per questo dito, per poi arrivare al cuore”",
+    "invitoText":"<strong>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</strong>",
     "footerText":"La vostra presenza renderà indimenticabile questo giorno.",
     "location": {
       "name": "Ricevimento",
@@ -31,7 +32,7 @@
       "noButton":"NO",
       "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
-      "deadLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deadLineText": "Vi chiediamo una gentile conferma tramite i tasti qui sopra entro e non oltre il ",
       "deadLineDate":"23 Maggio 2026"
     },
     "regalo": {
@@ -41,11 +42,12 @@
       "faIcon": "present",
       "img": "/img/regalo.jpg",
       "page": {
-        "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale;",
+        "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale:",
         "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Intestato a:</strong>\nAnton Khella & Irene De Meo",
+        "ibanName": "<strong>Beneficiario:</strong>\nAnton Khella & Irene De Meo",
         "banca": "<strong>Banca:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
+        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
+        "causale":"<strong>Causale:</strong> Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
@@ -54,14 +56,15 @@
       "end": "20260712T013000",
       "location": "Roma",
       "description": "Link invito:",
-      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "Aggiungi l'evento al tuo calendario"
+      "link": "https://irene-anton-wedding.netlify.app/",
+      "textBox": "Clicca qui per aggiungere l'evento al tuo calendario"
     }
   },
   "en": {
     "sigillo":"Tap here to open",
     "weddingDate": "Saturday, July 11th 2026",
-    "introText": "It was the Romans who established the tradition of wearing wedding rings on the left ring finger: they believed that the “vena amoris” ran directly through this finger and led straight to the heart.<br/><br/><strong>We are delighted to invite you to our wedding</strong>",
+    "introText": "“It was the Romans who established the tradition of wearing wedding rings on the left ring finger: they believed that the \"vena amoris\" ran directly through this finger and led straight to the heart”",
+    "invitoText":"<strong>We are delighted to invite you to our wedding</strong>",
     "footerText":"Your presence will make this day unforgettable.",
     "location": {
       "name": "Location",
@@ -90,7 +93,7 @@
       "noButton":"NO",
       "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
-      "deadLineText":"We kindly ask you to confirm using the buttons above by no later than ",
+      "deadLineText":"We kindly ask you to confirm using these buttons by no later than ",
       "deadLineDate":"23 May 2026"
     },
     "regalo": {
@@ -102,9 +105,10 @@
       "page":{
         "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution:",
         "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Account holder:</strong>\nAnton Khella & Irene De Meo",
+        "ibanName": "<strong>Beneficiary:</strong>\nAnton Khella & Irene De Meo",
         "banca": "<strong>Bank:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
+        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
+        "causale":"<strong>Description:</strong> Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
@@ -113,15 +117,16 @@
       "end": "20260712T013000",
       "location": "Rome",
       "description": "Invite link:",
-      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "Add a reminder to your calendar"
+      "link": "https://irene-anton-wedding.netlify.app/",
+      "textBox": "Tap here to add the event to your calendar"
     }
   },
   "ar": {
     "sigillo":"اضغط هنا لفتح الدعوة",
     "direction": "rtl",
     "weddingDate": "السبت ١١ يوليو ٢٠٢٦",
-    "introText": "الرومان هما اللي بدأوا عادة لبس دبل الجواز في الإصبع الرابع من اليد الشمال، لأنهم كانوا معتقدين إن 'وريد الحب' بيمر من الإصبع ده وبيوصل على طول للقلب.<br/><br/><strong>وبكل فرح وسعادة، يسعدنا ندعوكم لفرحنا.</strong>",
+    "introText": "”وبنى الرب الإله الضلع التي أخذها من آدم امرأة وأحضرها إلى آدم. فقال آدم: «هذه الآن عظم من عظامي ولحم من لحمي. هذه تدعى امرأة لأنها من امْرِءٍ أُخِذَتْ». لذلك يترك الرجل أباه وأمه ويتصق بامرأته ويكونان جسدا واحدا. (تك 2: 22-24) “",
+    "invitoText":"<strong>وبكل فرح وسعادة، نتشرف بدعوة سيادتكم لحضور حفل زفافنا</strong>",
     "footerText":"وجودكم هيخلّي اليوم ده مايتنسيش ابداً",
     "location": {
       "name": "القاعة",
@@ -150,7 +155,7 @@
       "noButton":"للأسف لأ",
       "yesMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nأيوه، هاجي! 🥳",
       "noMessage": "شكرًا على العزومة وألف مبروك على جوازكم.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
-      "deadLineText":"الرجاء تأكيد الحضور من خلال الزراير الي فوق قبل يوم ",
+      "deadLineText":"الرجاء تأكيد الحضور من خلال الزرايردي التي تتواصل على الواتساب قبل يوم ",
       "deadLineDate":"23/05/2026"
     },
     "regalo": {
@@ -162,9 +167,10 @@
       "page":{
         "heroText": "حضوركم معانا هو اهم هدية، بس لو حابين تفرحونا بحاجة، مساهمة على قدكم لشهر العسل هتبقى أحلى زكرة لينا",
         "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Account holder/Intestato a:</strong>\nAnton Khella & Irene De Meo",
+        "ibanName": "<strong>Beneficiary:</strong>\nAnton Khella & Irene De Meo",
         "banca": "<strong>Bank:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]"
+        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
+        "causale":"<strong>Description:</strong> Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
@@ -173,8 +179,8 @@
       "end": "20260712T013000",
       "location": "روما",
       "description":"لينك الدعوة:",
-      "link": "https://mrkhella.github.io/ia-wedding-invitation/",
-      "textBox": "ضيفه عندك على التقويم"
+      "link": "https://irene-anton-wedding.netlify.app/",
+      "textBox": "خايف تنسى؟ ضيف المناسبة عندك في النتيجة"
     }
   }
 }
