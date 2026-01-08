@@ -66,6 +66,7 @@ export default function Card({ item, isVideo }) {
                 fontSize: "24px",
                 fontFamily: "Playfair Display, serif",
                 fontStyle: "italic",
+                textAlign:"center"
               }}
             >
               {item.faIcon && (
@@ -96,6 +97,7 @@ export default function Card({ item, isVideo }) {
                   fontStyle: "italic",
                   backgroundColor: "rgba(136, 156, 130,0.4)",
                   width: "100%",
+                  textAlign:"center"
                 }}
               >
                 {item.time}

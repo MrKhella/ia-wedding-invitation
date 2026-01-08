@@ -16,7 +16,7 @@ export default function Footer({config}) {
         sx={{
           fontSize: "16px",
           fontWeight:"bold",
-          fontFamily: "Georgia, serif",
+          // fontFamily: "Georgia, serif",
           // marginTop: "70px",
           // marginBottom: "5px",
           textAlign: "center",

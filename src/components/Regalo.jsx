@@ -11,7 +11,7 @@ export default function Regalo() {
     if (!config) return null;
 
   return (
-        <div id="invite" className="page active" style={{ direction: config.direction || "ltr" }}>
+        <div id="invite" className="fade-in" style={{ direction: config.direction || "ltr" }}>
 
       <Header />
 

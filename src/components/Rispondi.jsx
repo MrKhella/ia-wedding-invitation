@@ -9,7 +9,7 @@ export default function Rispondi({ config }) {
       <Typography
         sx={{
           fontSize: "22px",
-          fontFamily: "Georgia, serif",
+          // fontFamily: "Georgia, serif",
           marginBottom: "10px",
         }}
       >
@@ -65,7 +65,7 @@ export default function Rispondi({ config }) {
       <Typography
         sx={{
           fontSize: "16px",
-          fontFamily:"Georgia"
+          // fontFamily:"Georgia"
         }}
       >
         {config.whatsapp.deadLineText}

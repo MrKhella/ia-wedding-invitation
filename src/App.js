@@ -4,7 +4,7 @@ import Cover from "./components/Cover";
 import Invite from "./components/Invite";
 import Regalo from "./components/Regalo";
 import { ThemeProvider } from "@mui/material/styles";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import theme from "./Theme";
 import { LanguageProvider } from "./context/LanguageContext";
 import LanguageSelector from "./components/LanguageSelector";
@@ -15,9 +15,7 @@ export default function App() {
       <LanguageProvider>
         <LanguageSelector />
       <HashRouter>
-      <Container 
-          maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px" }}
-        >
+      <Box sx={{ width: "100%", maxWidth: "430px", margin: "0 auto", padding: "0", }} >
         <Routes>
           <Route path="/" element={
             <Cover />
@@ -30,7 +28,7 @@ export default function App() {
         } />
           <Route path="/regalo" element={<Regalo />} />
         </Routes>
-      </Container>
+      </Box>
       </HashRouter>
       </LanguageProvider>
     </ThemeProvider>

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Footer from './Footer';
 import Header from './Header';
 import CarouselLinks from "./CarouselLinks";
@@ -13,12 +14,18 @@ export default function Invite() {
   const theme = useTheme();
 
   const { config, loading, error } = useConfig();
+
+  //fade in
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true); }, []);
+
   if (loading) return null; // oppure un loader 
   if (error) return <p>Errore: {error}</p>;
   if (!config) return null;
 
   return (
-    <div id="invite" className="page active" style={{ direction: config.direction || "ltr" }}>
+    <div id="invite" className="fade-in" style={{ direction: config.direction || "ltr" }}>
       <Header />
       <Box sx={{ textAlign: "center", margin: "10px" }}>
 
@@ -62,7 +69,7 @@ export default function Invite() {
         {/* <img src="/ia-wedding-invitation/saveDate.png" alt=""  width={400} height={100}/> */}
       </Box>
       <CarouselLinks config={config} />
-      
+
       <Rispondi config={config} />
 
       <Footer config={config} />

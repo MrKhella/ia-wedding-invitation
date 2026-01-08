@@ -19,6 +19,7 @@ export default function Cover() {
   const handleOpen = () => {
     setIsOpen(true);
     setTimeout(() => navigate("/invite"), 800); // dopo l’animazione apri l’invito
+    
   };
 
   if (loading) return null; // oppure un loader 
@@ -42,14 +43,13 @@ export default function Cover() {
   // const angleMultiplier = direction === "rtl" ? -step : step;
 
   return (
-    <>
-    <Container maxWidth="md" sx={{ padding: 2 }}>
+    <Box id="app-wrapper" sx={{ width: "100%", maxWidth: "430px", margin: "0 auto", minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", backgroundColor: "#f7f2ea", }} >
     <Box
       sx={{
         position: "fixed",
         top: 0,
         left: 0,
-        width: "100vw",
+        width: "100%",
         height: "100vh",
         backgroundColor: "#f7f2ea",
         overflow: "hidden",
@@ -171,7 +171,6 @@ export default function Cover() {
         </Typography>
       </ButtonBase>
     </Box>
-    </Container>
-    </>
+    </Box>
   );
 }
