@@ -19,7 +19,7 @@ export default function LanguageSelector() {
         zIndex: 999,
         display: "flex",
         gap: "12px",
-        padding: "5px 5% 5px 5px",
+        padding: "5px 10% 5px 5px",
         background: "rgba(133, 214, 108, 0.3)",
         backdropFilter: "blur(6px)",
         borderBottomLeftRadius: "12px",
