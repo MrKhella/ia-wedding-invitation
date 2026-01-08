@@ -6,8 +6,8 @@ export default function LanguageSelector() {
 
   const languages = [
     { code: "it", label: "🇮🇹" },
-    { code: "en", label: "🇬🇧" },
     { code: "ar", label: "🇪🇬" },
+    { code: "en", label: "🇬🇧" },
   ];
 
   return (
