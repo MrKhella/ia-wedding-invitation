@@ -38,10 +38,10 @@ export default function Header() {
           }}
           >
         {/* Immagine sinistra */}
-        <img src="/img/header-img-sx.jpg" alt="decorazione sinistra" style={{ width: "200px", opacity: 0.9 , display:"none"}} />
+        <img src="/img/header-img-sx.jpg" alt="header left" style={{ width: "200px", opacity: 0.9 , display:"none"}} />
 
         {/* Immagine destra */}
-        <img src="/img/header-img-dx.jpg" alt="decorazione destra" style={{ width: "250px", opacity: 0.9 }} />
+        <img src="/img/header-img-dx.jpg" alt="header right" style={{ width: "250px", opacity: 0.9 }} />
       </Box>
 
       <Typography
