@@ -43,22 +43,6 @@ export default function Cover() {
 
   return (
     <>
-    <div 
-    style={{
-      direction: config.direction || "ltr",
-      position: "absolute",
-      top: 20,
-      right: 20,
-      zIndex: 9999
-    }}
-  >
-      <select name="comboLang" value={lang} onChange={e => setLang(e.target.value)}>
-        <option value="it">🇮🇹 Italiano</option>
-        <option value="en">🇬🇧 English</option>
-        <option value="ar">🇪🇬 العربية</option>
-      </select>
-    </div>
-    
     <Container maxWidth="md" sx={{ padding: 2 }}>
     <Box
       sx={{
@@ -104,7 +88,7 @@ export default function Cover() {
               <Box
                 sx={{
                   position: "absolute",
-                  top: { xs: "55%", md: "45%" },
+                  top: { xs: "54%", md: "45%" },
                   left: "65%",
                   transform: "translateX(-50%)",
                   width: { xs: 290, md: 180 },

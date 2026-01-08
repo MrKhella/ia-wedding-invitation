@@ -11,19 +11,19 @@ export default function Footer({config}) {
         opacity: 0.8,
       }}
     >
-      {/* BOX PROMEMORIA CALENDAR */}
       {/* TITOLO */}
       <Typography
         sx={{
           fontSize: "16px",
           fontWeight:"bold",
           fontFamily: "Georgia, serif",
-          marginTop: "70px",
-          marginBottom: "5px",
+          // marginTop: "70px",
+          // marginBottom: "5px",
           textAlign: "center",
         }}
         dangerouslySetInnerHTML={{ __html:config?.calendar.textBox}}
       />
+      {/* BOX PROMEMORIA CALENDAR */}
       <Box
         sx={{
           // marginTop: "30px",
@@ -59,6 +59,26 @@ export default function Footer({config}) {
             style={{ width: "140px", height: "48px" }}
           />
         </a>
+        <br />
+        
+      </Box>
+      
+      <Box
+            sx={{
+              textAlign: "center",
+              margin: "30px",
+              opacity: 0.8,
+            }}
+          >
+      <Typography
+        sx={{
+          fontFamily: "Parisienne, cursive",
+          fontSize: "32px",
+          textShadow:"0 4px 20px rgba(136, 156, 130)" 
+        }}
+      >
+        {config.footerText}
+      </Typography>
       </Box>
           {/* Contenitore dell'immagine */}
           <Box

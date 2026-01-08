@@ -7,11 +7,13 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Container } from "@mui/material";
 import theme from "./Theme";
 import { LanguageProvider } from "./context/LanguageContext";
+import LanguageSelector from "./components/LanguageSelector";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>
+        <LanguageSelector />
       <HashRouter>
       <Container 
           maxWidth={false} sx={{ maxWidth: "430px", margin: "0 auto" ,padding:"20px" }}

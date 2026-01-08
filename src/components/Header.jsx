@@ -12,7 +12,7 @@ export default function Header() {
         paddingBottom: "10px",
       }}
     >
-      <Box
+      {/* <Box
       sx={{
           display: "flex",
           justifyContent: "flex-end",
@@ -26,7 +26,7 @@ export default function Header() {
         <option value="en">🇬🇧 English</option>
         <option value="ar">🇪🇬 العربية</option>
       </select>
-    </Box>
+    </Box> */}
       
         {/* Contenitore delle due immagini */}
           <Box sx={{

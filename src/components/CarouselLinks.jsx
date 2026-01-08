@@ -48,7 +48,7 @@ export default function CarouselLinks({ config }) {
     centerMode: true,
     initialSlide: 0,
     focusOnSelect: true,
-    centerPadding: isDesktop ? "80px" : "81px",
+    centerPadding: isDesktop ? "75px" : "73px",
   };
   if (!config) return null;
   return (

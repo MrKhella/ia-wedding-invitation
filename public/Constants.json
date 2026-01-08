@@ -32,7 +32,7 @@
       "noButton":"NO",
       "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
-      "deadLineText": "Vi chiediamo una gentile conferma tramite i bottoni qui sopra entro e non oltre il ",
+      "deadLineText": "Vi chiediamo una gentile conferma tramite i tasti qui sopra entro e non oltre il ",
       "deadLineDate":"23 Maggio 2026"
     },
     "regalo": {
@@ -57,7 +57,7 @@
       "location": "Roma",
       "description": "Link invito:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Aggiungi l'evento al tuo calendario"
+      "textBox": "Clicca qui per aggiungere l'evento al tuo calendario"
     }
   },
   "en": {
@@ -93,7 +93,7 @@
       "noButton":"NO",
       "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
-      "deadLineText":"We kindly ask you to confirm using the buttons above by no later than ",
+      "deadLineText":"We kindly ask you to confirm using these buttons by no later than ",
       "deadLineDate":"23 May 2026"
     },
     "regalo": {
@@ -118,7 +118,7 @@
       "location": "Rome",
       "description": "Invite link:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Add a reminder to your calendar"
+      "textBox": "Tap here to add the event to your calendar"
     }
   },
   "ar": {

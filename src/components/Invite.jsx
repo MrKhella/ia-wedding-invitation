@@ -62,25 +62,9 @@ export default function Invite() {
         {/* <img src="/ia-wedding-invitation/saveDate.png" alt=""  width={400} height={100}/> */}
       </Box>
       <CarouselLinks config={config} />
+      
       <Rispondi config={config} />
 
-      <Box
-            sx={{
-              textAlign: "center",
-              margin: "30px",
-              opacity: 0.8,
-            }}
-          >
-      <Typography
-        sx={{
-          fontFamily: "Parisienne, cursive",
-          fontSize: "32px",
-          textShadow:"0 4px 20px rgba(136, 156, 130)" 
-        }}
-      >
-        {config.footerText}
-      </Typography>
-      </Box>
       <Footer config={config} />
     </div>
   );

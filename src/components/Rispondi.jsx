@@ -16,13 +16,29 @@ export default function Rispondi({ config }) {
         {question}
       </Typography>
 
-      <Box sx={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+      <Box sx={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "20px",
+      }}>
         <a
           href={`https://wa.me/${phone}?text=${encodeURIComponent(yesMessage)}`}
           className="btn"
-          style={{ width: "100px", background: "rgba(136, 156, 130)", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
+          style={{ width: "100px", background: "rgba(132 204 109)", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
         >
-          {config.whatsapp.yesButton}
+          <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            // gap: "10px",
+          }}>
+            <img
+              src="/icons/whatsapp-icon.png"
+              alt=""
+              style={{ width: "32px", height: "32px" }}
+            />
+            {config.whatsapp.yesButton}
+          </Box>
         </a>
 
         <a
@@ -30,7 +46,19 @@ export default function Rispondi({ config }) {
           className="btn"
           style={{ width: "100px", background: "#999", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
         >
-          {config.whatsapp.noButton}
+          <Box sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            // gap: "10px",
+          }}>
+            <img
+              src="/icons/whatsapp-icon.png"
+              alt=""
+              style={{ width: "32px", height: "32px" }}
+            />
+            {config.whatsapp.noButton}
+          </Box>
         </a>
       </Box>
 
