@@ -4,6 +4,7 @@
     "weddingDate": "Sabato 11 Luglio 2026",
     "introText": "“Sono stati i Romani a dettare l'usanza delle fedi nuziali poste all’anulare sinistro: si riteneva che la \"vena amoris\" passasse direttamente per questo dito, per poi arrivare al cuore”",
     "invitoText":"<strong>Con immenso piacere siamo lieti di invitarvi al nostro matrimonio</strong>",
+    "carouselText":"Clicca per maggiori informazioni",
     "footerText":"La vostra presenza renderà indimenticabile questo giorno.",
     "location": {
       "name": "Ricevimento",
@@ -57,7 +58,7 @@
       "location": "Roma",
       "description": "Link invito:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Clicca qui per aggiungere l'evento al tuo calendario"
+      "textBox": "Aggiungi l'evento al tuo calendario"
     }
   },
   "en": {
@@ -65,6 +66,7 @@
     "weddingDate": "Saturday, July 11th 2026",
     "introText": "“It was the Romans who established the tradition of wearing wedding rings on the left ring finger: they believed that the \"vena amoris\" ran directly through this finger and led straight to the heart”",
     "invitoText":"<strong>We are delighted to invite you to our wedding</strong>",
+    "carouselText":"Tap for more information",
     "footerText":"Your presence will make this day unforgettable.",
     "location": {
       "name": "Location",
@@ -118,7 +120,7 @@
       "location": "Rome",
       "description": "Invite link:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Tap here to add the event to your calendar"
+      "textBox": "Add the event to your calendar"
     }
   },
   "ar": {
@@ -127,6 +129,7 @@
     "weddingDate": "السبت ١١ يوليو ٢٠٢٦",
     "introText": "”وبنى الرب الإله الضلع التي أخذها من آدم امرأة وأحضرها إلى آدم. فقال آدم: «هذه الآن عظم من عظامي ولحم من لحمي. هذه تدعى امرأة لأنها من امْرِءٍ أُخِذَتْ». لذلك يترك الرجل أباه وأمه ويتصق بامرأته ويكونان جسدا واحدا. (تك 2: 22-24) “",
     "invitoText":"<strong>وبكل فرح وسعادة، نتشرف بدعوة سيادتكم لحضور حفل زفافنا</strong>",
+    "carouselText":"اضغط لمزيد من المعلومات",
     "footerText":"وجودكم هيخلّي اليوم ده مايتنسيش ابداً",
     "location": {
       "name": "القاعة",
@@ -180,7 +183,7 @@
       "location": "روما",
       "description":"لينك الدعوة:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "خايف تنسى؟ ضيف المناسبة عندك في النتيجة"
+      "textBox": "ضيف المناسبة عندك في النتيجة"
     }
   }
 }

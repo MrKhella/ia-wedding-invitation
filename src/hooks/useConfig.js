@@ -8,11 +8,11 @@ export default function useConfig() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // 1️⃣ Carica il JSON una sola volta
+  //1 Carica il JSON una sola volta
   useEffect(() => {
     const loadConfig = async () => {
       try {
-        const response = await fetch(`${process.env.PUBLIC_URL}/Constants.json`);
+        const response = await fetch(`https://mrkhella.github.io/ia-wedding-invitation/Constants.json`);
         if (!response.ok) throw new Error("File di configurazione non trovato");
 
         const data = await response.json();
@@ -27,7 +27,7 @@ export default function useConfig() {
     loadConfig();
   }, []);
 
-  // 2️⃣ Ogni volta che cambia lingua, estrai la parte giusta
+  // 2 Ogni volta che cambia lingua, estrai la parte giusta
   useEffect(() => {
     if (allConfig) {
       setConfig(allConfig[lang]);
