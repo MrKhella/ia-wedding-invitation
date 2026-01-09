@@ -92,7 +92,7 @@ export default function Card({ item, isVideo }) {
             >
               <Typography
                 sx={{
-                  fontSize: "12px",
+                  fontSize: "18px",
                   fontFamily: "Playfair Display, serif",
                   fontStyle: "italic",
                   backgroundColor: "rgba(136, 156, 130,0.4)",
