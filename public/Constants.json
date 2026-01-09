@@ -42,7 +42,7 @@
       "faIcon": "present",
       "img": "/img/regalo.jpg",
       "page": {
-        "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale:",
+        "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale per la nostra luna di miele",
         "iban": "ITxxxxxxxx",
         "ibanName": "<strong>Beneficiario:</strong>\nAnton Khella & Irene De Meo",
         "banca": "<strong>Banca:</strong> [nome banca]",
@@ -103,7 +103,7 @@
       "faIcon": "present",
       "img": "/img/regalo.jpg",
       "page":{
-        "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution:",
+        "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution for our honey moon",
         "iban": "ITxxxxxxxx",
         "ibanName": "<strong>Beneficiary:</strong>\nAnton Khella & Irene De Meo",
         "banca": "<strong>Bank:</strong> [nome banca]",
