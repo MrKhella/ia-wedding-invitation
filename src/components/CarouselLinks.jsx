@@ -40,7 +40,7 @@ export default function CarouselLinks({ config }) {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
