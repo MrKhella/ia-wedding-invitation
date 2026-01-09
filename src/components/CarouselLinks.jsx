@@ -50,8 +50,8 @@ export default function CarouselLinks({ config }) {
     focusOnSelect: true,
     centerPadding: "19%",
 
-    // autoplay: true, 
-    // autoplaySpeed: 5000,
+    autoplay: true, 
+    autoplaySpeed: 5000,
     // pauseOnHover: true, 
     // pauseOnFocus: true, 
     // pauseOnDotsHover: true,
