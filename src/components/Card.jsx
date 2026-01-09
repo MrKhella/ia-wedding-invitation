@@ -153,7 +153,8 @@ export default function Card({ item, isVideo }) {
               width: "300px", 
               height: "300px", 
               objectFit: "cover", 
-              display: "block", }} >
+              display: "block", }}
+              onClick={toggleAudio} >
               <source src="/video/saveTheDate.mp4" type="video/mp4" />
             </video>
           </Box>
