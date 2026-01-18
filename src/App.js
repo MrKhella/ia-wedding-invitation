@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Cover from "./components/Cover";
 import Invite from "./components/Invite";
@@ -10,28 +11,31 @@ import { LanguageProvider } from "./context/LanguageContext";
 import LanguageSelector from "./components/LanguageSelector";
 
 export default function App() {
+
+  // ⭐ Redirect su refresh
+  useEffect(() => {
+    const hash = window.location.hash; // esempio "#/invite"
+    if (hash && hash !== "#/") {
+      window.location.hash = "#/"; // torna alla home
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>
         <LanguageSelector />
-      <HashRouter>
-      <Box sx={{ width: "100%", maxWidth: "430px", margin: "0 auto", padding: "0", }} >
-        <Routes>
-          <Route path="/" element={
-            <Cover />
-            } />
-          {/* <Route path="/ia-wedding-invitation" element={
-            <Cover />
-            } /> */}
-          <Route path="/invite" element={
-            <Invite />
-        } />
-          <Route path="/regalo" element={<Regalo />} />
-        </Routes>
-      </Box>
-      </HashRouter>
+
+        <HashRouter>
+          <Box sx={{ width: "100%", maxWidth: "430px", margin: "0 auto", padding: "0" }}>
+            <Routes>
+              <Route path="/" element={<Cover />} />
+              <Route path="/invite" element={<Invite />} />
+              <Route path="/regalo" element={<Regalo />} />
+            </Routes>
+          </Box>
+        </HashRouter>
+
       </LanguageProvider>
     </ThemeProvider>
   );
 }
-

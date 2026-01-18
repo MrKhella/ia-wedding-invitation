@@ -1,13 +1,21 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef , useImperativeHandle , forwardRef } from "react";
 import { Box, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChurch, faGift, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 
-export default function Card({ item, isVideo }) {
+const Card = forwardRef(({ item, isVideo }, ref) => {
   const [audioEnabled, setAudioEnabled] = useState(false);
   const videoRef = useRef(null);
+
+  useImperativeHandle(ref, () => ({
+    triggerClick() {
+      if (videoRef.current) {
+         videoRef.current.click(); 
+        } 
+      } 
+    }));
 
   const iconMap = {
     "location-dot": faLocationDot,
@@ -163,4 +171,6 @@ export default function Card({ item, isVideo }) {
       }
     </Box>
   );
-}
+
+}); 
+export default Card;

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Footer from './Footer';
 import Header from './Header';
 import CarouselLinks from "./CarouselLinks";
@@ -10,15 +11,27 @@ import Card from './Card';
 
 export default function Invite() {
 
-  
   const theme = useTheme();
 
   const { config, loading, error } = useConfig();
 
-  //fade in
+  const cardRef = useRef(null);
   const [visible, setVisible] = useState(false);
+  
   useEffect(() => {
-    setVisible(true); }, []);
+    // setVisible(true);
+    const timer = setTimeout(() => { 
+      try { 
+        if (cardRef.current) { 
+          cardRef.current.triggerClick(); 
+          console.log("attivato"); 
+        } 
+      } catch (err) {
+        console.warn("Video autoplay bloccato dal browser:", err); // qui NON fai nulla → il video resta mutato e non dà errori 
+        }
+    }, 2000); // 2 secondi 
+    return () => clearTimeout(timer);
+  }, []);
 
   if (loading) return null; // oppure un loader 
   if (error) return <p>Errore: {error}</p>;
@@ -41,7 +54,7 @@ export default function Invite() {
         >
         </Typography>
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", }} >
-          <Card isVideo={true} />
+          <Card ref={cardRef} isVideo={true} />
         </Box>
         <Typography
           sx={{
