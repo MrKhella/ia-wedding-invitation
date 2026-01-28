@@ -1,14 +1,34 @@
 import { Box } from "@mui/material";
 import { useLanguage } from "../context/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 export default function LanguageSelector() {
   const { lang, setLang } = useLanguage();
+  const navigate = useNavigate();
+
 
   const languages = [
     { code: "en", label: "🇬🇧" },
     { code: "it", label: "🇮🇹" },
     { code: "ar", label: "🇪🇬" },
   ];
+
+  const changeLanguage = (code) => {
+    setLang(code);
+    localStorage.setItem("preferredLang", code);
+
+    // aggiorna l’URL mantenendo la rotta attuale 
+    const currentPath = window.location.hash.replace("#", "");
+    const parts = currentPath.split("/").filter(Boolean);
+
+    // sostituisci la lingua se presente 
+    if (["it", "en", "ar"].includes(parts[0])) {
+      parts[0] = code;
+    } else {
+      parts.unshift(code);
+    }
+    navigate(parts.join("/"));
+  };
 
   return (
     <Box

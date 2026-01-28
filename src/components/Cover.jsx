@@ -1,6 +1,6 @@
 import { Box, Typography, ButtonBase , Container , useMediaQuery} from "@mui/material";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState , useEffect} from "react";
+import { useNavigate , useParams } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 import { useLanguage } from "../context/LanguageContext";
 import useConfig from "../hooks/useConfig";
@@ -8,13 +8,19 @@ import useConfig from "../hooks/useConfig";
 export default function Cover() {
   const { config, loading, error } = useConfig();
 
+  const { lang: urlLang } = useParams(); 
+  const { setLang } = useLanguage();
+  useEffect(() => { 
+    if (urlLang) { 
+      setLang(urlLang); 
+    } 
+  }, [urlLang]);
+
   const isDesktop = useMediaQuery("(min-width:768px)");
 
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const theme = useTheme();
-
-  const { lang, setLang } = useLanguage();
 
   const handleOpen = () => {
     setIsOpen(true);
