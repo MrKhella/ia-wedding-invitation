@@ -91,6 +91,7 @@ export default function Regalo() {
                 fontFamily: "monospace",
                 fontSize: "16px",
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
+                direction:"ltr"
               }}
               dangerouslySetInnerHTML={{ __html:config?.regalo.page.ibanName}}
             />

@@ -44,11 +44,11 @@
       "img": "/img/regalo.jpg",
       "page": {
         "heroText": "Abbiamo già casa piena d'amore ma se volete farci un regalo che non si impacchetta, potete aiutarci con un contributo speciale per la nostra luna di miele",
-        "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Beneficiario:</strong>\nAnton Khella & Irene De Meo",
-        "banca": "<strong>Banca:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
-        "causale":"<strong>Causale:</strong> Regalo Nozze Irene e Anton"
+        "iban": "IT23A0623003223000015603146",
+        "ibanName": "<strong>Beneficiario:</strong>\nKHELLA ANTON DE MEO IRENE",
+        "banca": "<strong>Banca: </strong>Crédit Agricole",
+        "bic_swift": "<strong>BIC/SWIFT: </strong>CRPPIT2PXXX",
+        "causale":"<strong>Causale: </strong>Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
@@ -106,11 +106,11 @@
       "img": "/img/regalo.jpg",
       "page":{
         "heroText": "Our home is already full of love, but if you’d like to give us a gift that can’t be wrapped, you can help us with a special contribution for our honey moon",
-        "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Beneficiary:</strong>\nAnton Khella & Irene De Meo",
-        "banca": "<strong>Bank:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
-        "causale":"<strong>Description:</strong> Regalo Nozze Irene e Anton"
+        "iban": "IT23A0623003223000015603146",
+        "ibanName":  "<strong>Beneficiary:</strong>\nKHELLA ANTON DE MEO IRENE",
+        "banca": "<strong>Bank: </strong>Crédit Agricole",
+        "bic_swift": "<strong>BIC/SWIFT: </strong>CRPPIT2PXXX",
+        "causale":"<strong>Description: </strong>Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
@@ -169,11 +169,11 @@
       "img": "/img/regalo.jpg",
       "page":{
         "heroText": "حضوركم معانا هو اهم هدية، بس لو حابين تفرحونا بحاجة، مساهمة على قدكم لشهر العسل هتبقى أحلى زكرة لينا",
-        "iban": "ITxxxxxxxx",
-        "ibanName": "<strong>Beneficiary:</strong>\nAnton Khella & Irene De Meo",
-        "banca": "<strong>Bank:</strong> [nome banca]",
-        "bic_swift": "<strong>BIC SWIFT:</strong> [codice bic swift]",
-        "causale":"<strong>Description:</strong> Regalo Nozze Irene e Anton"
+        "iban": "IT23A0623003223000015603146",
+        "ibanName": "<strong>Beneficiary:</strong>\nKHELLA ANTON DE MEO IRENE",
+        "banca": "<strong>Bank: </strong>Crédit Agricole",
+        "bic_swift": "<strong>BIC/SWIFT: </strong>CRPPIT2PXXX",
+        "causale":"<strong>Description: </strong>Regalo Nozze Irene e Anton"
       }
     },
     "calendar": {
