@@ -54,11 +54,12 @@
     "calendar": {
       "title": "Matrimonio Irene & Anton",
       "start": "20260711T160000",
-      "end": "20260712T013000",
+      "end": "20260711T235900",
       "location": "Roma",
       "description": "Link invito:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Aggiungi l'evento al tuo calendario"
+      "textBox": "Aggiungi l'evento al tuo calendario",
+      "appleCalendar":"https://mrkhella.github.io/ia-wedding-invitation/IA-wedding-reminder.ics"
     }
   },
   "en": {
@@ -116,11 +117,12 @@
     "calendar": {
       "title": "Irene & Anton's Wedding Day",
       "start": "20260711T160000",
-      "end": "20260712T013000",
+      "end": "20260711T235900",
       "location": "Rome",
       "description": "Invite link:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "Add the event to your calendar"
+      "textBox": "Add the event to your calendar",
+      "appleCalendar":"https://mrkhella.github.io/ia-wedding-invitation/IA-wedding-reminder.ics"
     }
   },
   "ar": {
@@ -179,11 +181,12 @@
     "calendar": {
       "title": "ليلة فرح أنطون & إيريني",
       "start": "20260711T160000",
-      "end": "20260712T013000",
+      "end": "20260711T235900",
       "location": "روما",
       "description":"لينك الدعوة:",
       "link": "https://irene-anton-wedding.netlify.app/",
-      "textBox": "ضيف المناسبة عندك في النتيجة"
+      "textBox": "ضيف المناسبة عندك في النتيجة",
+      "appleCalendar":"https://mrkhella.github.io/ia-wedding-invitation/IA-wedding-reminder.ics"
     }
   }
 }
