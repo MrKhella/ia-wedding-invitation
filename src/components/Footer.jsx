@@ -51,7 +51,7 @@ export default function Footer({config}) {
         </a>
 
         {/* APPLE CALENDAR (ICS) */}
-        <a href="/IA-wedding-reminder.ics" download="IA-wedding-reminder.ics">
+        <a href={config.calendar.appleCalendar} download={config.calendar.appleCalendar}>
 
           <img
             src="/icons/apple-calendar.png"

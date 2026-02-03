@@ -76,7 +76,7 @@ export default function Regalo() {
             <Typography
               sx={{
                 fontFamily: "monospace",
-                fontSize: "18px",
+                fontSize: "16px",
                 letterSpacing: "1px",
                 // mb: 1,
                 textShadow:"0 2px 4px rgba(0,0,0,1)",
