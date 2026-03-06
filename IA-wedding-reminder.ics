@@ -4,7 +4,7 @@ BEGIN:VEVENT
 DTSTART:20260711T160000
 DTEND:20260711T235900
 SUMMARY:Matrimonio Irene & Anton
-DESCRIPTION:Link invito: https://irene-anton-wedding.netlify.app/
+DESCRIPTION:Link invito: https://mr-khella.netlify.app/
 LOCATION:Roma
 END:VEVENT
 END:VCALENDAR
