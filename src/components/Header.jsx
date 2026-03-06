@@ -27,19 +27,6 @@ export default function Header() {
         {/* Immagine destra */}
         <img src="/img/header-img-dx.jpg" alt="header right" style={{ width: "250px", opacity: 0.9 }} />
       </Box>
-
-      <Typography
-        variant="h3"
-        sx={{
-        //   fontFamily: default,
-          textAlign: "center",
-          fontStyle: "italic",
-          margin: "10px",
-          textShadow:"0 4px 20px rgba(136, 156, 130)" 
-        }}
-      >
-        Irene & Anton
-      </Typography>
     </Box>
   );
 }

@@ -62,12 +62,28 @@ export default function Invite() {
             // fontFamily: "Georgia, serif",
             fontStyle: "italic",
             // marginBottom: "10px",
-            padding: "30px 20px"
+            padding: "20px"
           }}
           dangerouslySetInnerHTML={{ __html: config.invitoText }}
         >
         </Typography>
+
+        <Typography
+          variant="h3"
+          sx={{
+            //   fontFamily: default,
+            fontSize:62,
+            textAlign: "center",
+            fontStyle: "italic",
+            marginBottom: "20px",
+            textShadow: "0 4px 20px rgba(136, 156, 130)"
+          }}
+        >
+          Irene & Anton
+        </Typography>
+
         <hr />
+
         <Typography
           sx={{
             fontSize: "36px",
