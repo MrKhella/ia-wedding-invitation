@@ -13,43 +13,85 @@ import LanguageSelector from "./components/LanguageSelector";
 export default function App() {
 
   // ⭐ Redirect su refresh
+  // useEffect(() => {
+  //   const handleHashChange = () => {
+  //     const hash = window.location.hash; // es: "#/ar" o "#/ar/invite"
+
+  //     // 1. Riconosci se l'URL contiene una lingua
+  //     const match = hash.match(/^#\/(it|en|ar)(\/.*)?$/);
+
+  //     if (match) {
+  //       const lang = match[1]; // "it", "en", "ar"
+  //       const rest = match[2] || "/"; // "/invite", "/regalo", oppure "/"
+
+  //       // salva la lingua
+  //       localStorage.setItem("preferredLang", lang);
+
+  //       // rimuovi la lingua dall'URL e vai alla route reale
+  //       window.location.hash = "#" + rest;
+  //       return;
+  //     }
+
+  //     // 2. Comportamento precedente: refresh su /invite o /regalo → torna alla home
+  //     // if (hash && hash !== "#/") {
+  //     //   window.location.hash = "#/";
+  //     // }
+
+  //     // 2. Redirect SOLO se è un refresh 
+  //     const nav = performance.getEntriesByType("navigation")[0];
+  //     const isReload = nav?.type === "reload";
+  //     if (isReload && hash !== "#/") {
+  //       window.location.hash = "#/";
+  //     };
+
+  //   };
+
+  //   handleHashChange();
+  //   window.addEventListener("hashchange", handleHashChange);
+  //   return () => window.removeEventListener("hashchange", handleHashChange);
+
+  // }, []);
+
   useEffect(() => {
-    const handleHashChange = () => {
-    const hash = window.location.hash; // es: "#/ar" o "#/ar/invite"
+    let isPopState = false;
 
-    // 1. Riconosci se l'URL contiene una lingua
-    const match = hash.match(/^#\/(it|en|ar)(\/.*)?$/);
-
-    if (match) {
-      const lang = match[1]; // "it", "en", "ar"
-      const rest = match[2] || "/"; // "/invite", "/regalo", oppure "/"
-
-      // salva la lingua
-      localStorage.setItem("preferredLang", lang);
-
-      // rimuovi la lingua dall'URL e vai alla route reale
-      window.location.hash = "#" + rest;
-      return;
-    }
-
-    // 2. Comportamento precedente: refresh su /invite o /regalo → torna alla home
-    // if (hash && hash !== "#/") {
-    //   window.location.hash = "#/";
-    // }
-
-    // 2. Redirect SOLO se è un refresh 
-    const nav = performance.getEntriesByType("navigation")[0]; 
-    const isReload = nav?.type === "reload"; 
-    if (isReload && hash !== "#/") { 
-      window.location.hash = "#/"; 
+    const handlePopState = () => {
+      isPopState = true;
     };
 
-  };
+    const handleHashChange = () => {
+      const hash = window.location.hash;
 
-  handleHashChange();
-  window.addEventListener("hashchange", handleHashChange);
-  return () => window.removeEventListener("hashchange", handleHashChange);
+      // Riconosci se l'URL contiene una lingua
+      const match = hash.match(/^#\/(it|en|ar)(\/.*)?$/);
 
+      if (match) {
+        const lang = match[1];
+        const rest = match[2] || "/";
+        localStorage.setItem("preferredLang", lang);
+        window.location.hash = "#" + rest;
+        return;
+      }
+
+      // Redirect SOLO se è un refresh (non un popstate)
+      if (!isPopState && hash !== "#/") {
+        window.location.hash = "#/";
+      }
+
+      // Reset del flag
+      isPopState = false;
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    window.addEventListener("hashchange", handleHashChange);
+
+    // Esegui anche all'avvio
+    handleHashChange();
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
   }, []);
 
 

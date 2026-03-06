@@ -72,7 +72,7 @@ export default function Invite() {
           variant="h3"
           sx={{
             //   fontFamily: default,
-            fontSize:62,
+            fontSize:52,
             textAlign: "center",
             fontStyle: "italic",
             marginBottom: "20px",
@@ -86,7 +86,7 @@ export default function Invite() {
 
         <Typography
           sx={{
-            fontSize: "36px",
+            fontSize: "32px",
             fontFamily: theme.typography.fonts.dancingScript,
             marginBottom: "10px",
             textShadow:"0 4px 20px rgba(136, 156, 130)" 
