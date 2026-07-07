@@ -35,7 +35,7 @@
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
       "deadLineText": "",
       "deadLineDate":"",
-      "enable":true
+      "enable":false
     },
     "regalo": {
       "name": "Il vostro regalo per noi",
@@ -99,7 +99,7 @@
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
       "deadLineText":"",
       "deadLineDate":"",
-      "enable":true
+      "enable":false
     },
     "regalo": {
       "name": "Your gift for us",
@@ -164,7 +164,7 @@
       "noMessage": "شكرًا على العزومة وألف مبروك.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
       "deadLineText":"",
       "deadLineDate":"",
-      "enable":true
+      "enable":false
     },
     "regalo": {
       "name": "هديتكم لينا",
