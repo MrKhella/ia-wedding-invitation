@@ -33,7 +33,7 @@
       "noButton":"NO",
       "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
-      "deadLineText": "",
+      "deadLineText": "Non è più possibile rispondere all'invito. Contattare gli sposi",
       "deadLineDate":"",
       "enable":false
     },
@@ -97,7 +97,7 @@
       "noButton":"NO",
       "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
-      "deadLineText":"",
+      "deadLineText":"It's no longer possible to respond to the invitation. Please contact the bride or groom.",
       "deadLineDate":"",
       "enable":false
     },
@@ -162,7 +162,7 @@
       "noButton":"للأسف لأ",
       "yesMessage": "شكرًا على العزومة وألف مبروك.\nأيوه، هاجي! 🥳",
       "noMessage": "شكرًا على العزومة وألف مبروك.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
-      "deadLineText":"",
+      "deadLineText":"لم يعد بالإمكان الرد على الدعوة. يرجى التواصل مع العريس أو العروسة",
       "deadLineDate":"",
       "enable":false
     },
