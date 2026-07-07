@@ -12,7 +12,7 @@
       "emoji": "📍",
       "faIcon": "location-dot",
       "img": "/img/ricevimento.jpeg",
-      "time": "Dalle ore 19:00"
+      "time": "Dalle ore 18:30"
     },
     "chiesa": {
       "name": "Cerimonia",
@@ -76,7 +76,7 @@
       "emoji": "📍",
       "faIcon": "location-dot",
       "img": "/img/ricevimento.jpeg",
-      "time": "From 7:00 PM"
+      "time": "From 6:30 PM"
     },
     "chiesa": {
       "name": "Ceremony",
@@ -141,7 +141,7 @@
       "emoji": "📍",
       "faIcon": "location-dot",
       "img": "/img/ricevimento.jpeg",
-      "time": "من الساعة ٧:٠٠ مساءً"
+      "time": "من الساعة ٦:٣٠ مساءً"
     },
     "chiesa": {
       "name": "الكنيسة",
