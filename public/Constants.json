@@ -33,8 +33,9 @@
       "noButton":"NO",
       "yesMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nSì, parteciperò! 🥳",
       "noMessage": "Grazie per l'invito e tanti auguri per il vostro matrimonio.\nMi dispiace ma purtroppo non potrò esserci. 😞",
-      "deadLineText": "Vi chiediamo una gentile conferma tramite i tasti qui sopra entro e non oltre il ",
-      "deadLineDate":"23 Maggio 2026"
+      "deadLineText": "",
+      "deadLineDate":"",
+      "enable":true
     },
     "regalo": {
       "name": "Il vostro regalo per noi",
@@ -96,8 +97,9 @@
       "noButton":"NO",
       "yesMessage": "Thanks for the invite, and congratulations on your wedding!\nYes, I’ll be there! 🥳",
       "noMessage": "Thanks for the invite, and congratulations on your wedding!\nI’m really sorry, but I won’t be able to make it. 😞",
-      "deadLineText":"We kindly ask you to confirm using these buttons by no later than ",
-      "deadLineDate":"23 May 2026"
+      "deadLineText":"",
+      "deadLineDate":"",
+      "enable":true
     },
     "regalo": {
       "name": "Your gift for us",
@@ -160,8 +162,9 @@
       "noButton":"للأسف لأ",
       "yesMessage": "شكرًا على العزومة وألف مبروك.\nأيوه، هاجي! 🥳",
       "noMessage": "شكرًا على العزومة وألف مبروك.\nآسف جدًا بس للأسف مش هقدر أكون موجود. 😞",
-      "deadLineText":"الرجاء تأكيد الحضور من خلال الزراير التي تتواصل على الواتساب قبل يوم",
-      "deadLineDate":"23/05/2026"
+      "deadLineText":"",
+      "deadLineDate":"",
+      "enable":true
     },
     "regalo": {
       "name": "هديتكم لينا",

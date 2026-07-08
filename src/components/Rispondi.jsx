@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 
 export default function Rispondi({ config }) {
-  const { phone, question, yesMessage, noMessage, deadLineText } = config.whatsapp;
+  const { phone, question, yesMessage, noMessage, deadLineText , enable } = config.whatsapp;
 
   if (!config) return null;
   return (
@@ -22,10 +22,17 @@ export default function Rispondi({ config }) {
         gap: "20px",
       }}>
         <a
-          href={`https://wa.me/${phone}?text=${encodeURIComponent(yesMessage)}`}
+          href={enable ? `https://wa.me/${phone}?text=${encodeURIComponent(yesMessage)}` : undefined}
           className="btn"
-          style={{ width: "100px", background: "rgba(132 204 109)", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
+          style={{
+            width: "100px",
+            background: enable ? "rgba(132 204 109)" : "rgba(132 204 109, 0.4)",
+            boxShadow: enable ? "0 4px 20px rgba(0,0,0,0.25)" : "none",
+            pointerEvents: enable ? "auto" : "none",
+            opacity: enable ? 1 : 0.5,
+          }}
         >
+
           <Box sx={{
             display: "flex",
             justifyContent: "center",
@@ -42,10 +49,17 @@ export default function Rispondi({ config }) {
         </a>
 
         <a
-          href={`https://wa.me/${phone}?text=${encodeURIComponent(noMessage)}`}
+          href={enable ? `https://wa.me/${phone}?text=${encodeURIComponent(noMessage)}` : undefined}
           className="btn"
-          style={{ width: "100px", background: "#999", boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}
+          style={{
+            width: "100px",
+            background: enable ? "#999" : "rgba(153,153,153,0.4)",
+            boxShadow: enable ? "0 4px 20px rgba(0,0,0,0.25)" : "none",
+            pointerEvents: enable ? "auto" : "none",
+            opacity: enable ? 1 : 0.5,
+          }}
         >
+
           <Box sx={{
             display: "flex",
             justifyContent: "center",
